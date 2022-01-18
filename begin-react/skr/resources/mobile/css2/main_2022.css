@@ -203,6 +203,7 @@ body.dimRenew:before {background-color:rgba(0, 0, 0, 0.7); content:''; position:
 .btmPopupJeju .btmInner.open,
 .btmInner.open {background-color:#fff;}
 
+.btmInner.open .storeList .selectArea .selectBranchWrap {background-color:#f6f6f6;}
 
 /* 안내문구 */
 .notiWrap {display:flex; margin-top:16px; padding:0 24px;}
@@ -268,11 +269,11 @@ body.dimRenew:before {background-color:rgba(0, 0, 0, 0.7); content:''; position:
 /* 지점선택 */
 .storeWrap {padding-top:16px; height:calc(100% - 32px);}
 .storeList {position:relative; height:100%;}
-.storeList .selectArea {padding-top:16px; height:100%;}
+.storeList .selectArea {padding-top:16px; height:100%; overflow-y:auto;}
 .storeList .selectArea .araeLi > a {display:block; padding:10px 24px; font-size:16px; color:#222;}
 .storeList .selectArea .araeLi.on > a {color:#ff7a00; font-weight:bold;}
 
-.storeList .selectArea .selectBranchWrap {display:none; padding:24px 0; position:absolute; right:0; top:0; width:58%; height:100%; background-color:#f6f6f6; overflow-y:auto;}
+.storeList .selectArea .selectBranchWrap {display:none; padding:24px 0; position:absolute; right:0; top:0; width:58%; height:100%; background-color:#898282; overflow-y:auto;}
 .storeList .selectArea .on .selectBranchWrap {display:block;}
 .storeList .selectBranchWrap li a {display:block; padding:10px 12px 10px 24px; color:#222; font-size:16px;}
 .storeList .selectBranchWrap li.on a {color:#ff7a00; font-weight:bold;}
