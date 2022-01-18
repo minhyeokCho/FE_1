@@ -1,0 +1,57 @@
+@CHARSET "EUC-KR";
+
+.info-caption{float: left;width: 48%;}
+.m_point{position: relative;font-size: 12px;color:#666;display: inline-block;right: 0;top: -2px;}
+
+
+/* corp_shorRent */
+.corp_shortRent_info {
+	position:relative;
+	padding: 0 14px;
+	margin-top: 55px;
+}
+.corp_shortRent_info::before {
+	content:"";
+	position:absolute;
+	top: -1px;
+	left:0;
+	right:0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	z-index: 9;
+}
+.corp_shortRent_info dl {
+	box-sizing: border-box;
+	background: #fdfcf8;
+	padding: 12px 0;
+	border: 1px solid #f68121;	
+	text-align: center;
+}
+.corp_shortRent_info dl dt {
+	font-size: 17px;
+	color: #333;
+}
+.corp_shortRent_info dl dd {
+	margin-top: 10px;
+	font-size: 12px;
+	font-weight: 300;
+}
+.corp_shortRent_info + .contents {
+	margin-top: 20px;
+} 
+
+/* �̵������ �߰� */
+@media screen and (max-width:340px){	
+	.m_point{right: 10%;}
+}
+@media screen and (min-width:341px) and (max-width:368px){
+	.m_point{right: 3%;}
+}
+
+@media screen and (min-width:400px) and (max-width:415px){
+	.info-caption{width: 53%;}
+}
+@media screen and (min-width:416px){
+	.info-caption{;width: 75%;}
+}

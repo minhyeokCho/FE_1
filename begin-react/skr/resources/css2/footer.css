@@ -1,0 +1,280 @@
+@CHARSET "UTF-8";
+
+/* 지도보기 팝업 */
+.mt10{margin-top: 10px;}
+.modal-map .modal-header h3{margin-bottom: 12px !important;}
+.modal-map .modal-header h3{margin-top: -1px}
+.modal-pop.modal-map {height: 740px!important;margin-top: -400px!important;}
+.map_article{position: relative;overflow-y: scroll;height: 537px;}
+.modal-pop#modal-office-detail .map_article .office-name strong{line-height: 22px;width: 100%;margin-bottom: 10px;}
+.modal-pop#modal-office-detail .map_article .office-name{position: relative;margin: 0;}
+.modal-pop#modal-office-detail .map_article .office-name span{position: relative;margin: 0 0 6px 0;line-height: 13px;}
+.modal-pop#modal-office-detail .map_article .list-info{margin:0 0 6px 0;}
+.map-fast-btn{width: 150px;top:0px;right: 10px;position: absolute;}
+.modal-pop#modal-office-detail article .iframe-map{height: 248px;margin-right: 10px;}
+.p.msg-info.v1{line-height: 22px;}
+.tb-cnt.map-way tbody td{padding:16px 30px 14px; }
+.map-way{width: 673px;}
+
+#modal-office-detail-new .addr-area{width: 470px !important;}
+.modal-pop#modal-office-detail-new article .office-name strong{font-size: 22px;margin-bottom: 10px;}
+.modal-pop#modal-office-detail-new article .list-info li:last-child{margin-bottom: 15px;}
+
+.emailadd{clear:both;position: relative;left: 170px;color:#aaa;font-size: 13px;line-height: 1.4em;}
+
+.quick-menu{top: 153px;}
+.quick-menu.off{height: 666px; width: 99px; top: 124px; z-index: 999}
+
+/* 190925 테슬라 퀵바 추가 */
+/*
+.quick-menu ul li.menu6{border-top: 1px solid #444;top:-1px;position: relative;}
+.quick-menu ul li.menu6 a{background-image:url(/resources/img/tesla_quick.jpg);height: 207px;border: 0;font-size: 0;}
+.quick-menu ul li.menu6 a:before{margin: 0}
+*/
+
+/* 191218 푸터로고 렌터카로 변경 */
+footer .footer-wrapper .footer-info h1{
+	content:"";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 111px;
+    height: 45px;
+    background-image: url(/resources/img/logo_rentcar.png) !important;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    -webkit-background-size: 95px 45px;
+    background-size: 95px 45px;
+	
+}
+
+footer .footer-wrapper .footer-info .site-info span:nth-child(4){margin-left:20px;}
+footer .footer-wrapper .footer-info .site-info span:nth-child(4):after{display: block !important;}
+
+footer .footer-wrapper .footer-info .site-info span:nth-child(5){margin-left:0px;}
+footer .footer-wrapper .footer-info .site-info span:nth-child(5):after{display: none;}
+footer .footer-wrapper .footer-info .sns_link {position:absolute; right:0px; top:140px}
+footer .footer-wrapper .footer-info .sns_link ul li { display: inline-block;width: 20px;height: 19px;background: #fff;margin: 0 7px}
+footer .footer-wrapper .footer-info .sns_link ul li a {display: block;width: 100%;height: 100%;}
+footer .footer-wrapper .footer-info .sns_link ul li:last-child {margin-left: 7px;margin-right: 0}
+footer .footer-wrapper .footer-info .sns_link ul li.post {background: url(/resources/img/ico_sns_post.png) no-repeat; background-position: center;}
+footer .footer-wrapper .footer-info .sns_link ul li.blog {background: url(/resources/img/ico_sns_blog.png) no-repeat; background-position: center;}
+footer .footer-wrapper .footer-info .sns_link ul li.facebook {background: url(/resources/img/ico_sns_facebook.png) no-repeat; background-position: center;}
+footer .footer-wrapper .footer-info .sns_link ul li.instargram {background: url(/resources/img/ico_sns_instargram.png) no-repeat; background-position: center;}
+footer .footer-wrapper .footer-info .sns_link ul li.youtube {width:25px; height:19px; background: url(/resources/img/ico_sns_youtube.png) no-repeat; background-position: center;}
+
+.quick-menu ul li a:hover{border-left: 1px solid #444;}
+
+/* 정비매장 아이콘추가 */
+.quick-menu ul li.menu5 a:before{   
+	width: 33px;
+    height: 32px;
+    background-image: url(/resources/img/spr-common.png);
+    background-repeat: no-repeat;
+    background-position: -1268px -1201px;
+    -webkit-background-size: 1347px 1290px;
+    background-size: 1347px 1290px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.quick-menu ul li.menu5:hover a:before {
+    width: 33px;
+    height: 32px;
+    background-image: url(/resources/img/spr-common.png);
+    background-repeat: no-repeat;
+    background-position: -1268px -1237px;
+    -webkit-background-size: 1347px 1290px;
+    background-size: 1347px 1290px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.quick-menu ul li.menu6 a{padding-top: 20px;}
+
+/* 상담신청 색상변경 */
+.quick-menu ul li.menu6 a:before{
+	content:"";
+	width: 32px;
+    height: 30px;
+    background-image: url(/resources/img/icon_reqt_red.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    -webkit-background-size: inherit;
+    background-size: 100%;	
+}
+.quick-menu ul li.menu6:hover a:before{
+	width: 32px;
+	height: 30px;
+	background-image:url(/resources/img/spr-common.png);
+	background-repeat:no-repeat;
+	background-position:-1309px -295px;
+	-webkit-background-size:1347px 1290px;
+	background-size:1347px 1290px;
+	text-indent:1000%;
+	white-space:nowrap;
+	overflow:hidden;
+	}
+
+.quick-menu ul li.menu6 a{color: #eb444b;}
+.quick-menu ul li.menu6 a:hover{color: #fff;background-color: #eb444b; border-left: 1px solid #eb444b;}
+
+.quick-menu ul li.menu7{margin-top: 0;}
+.quick-menu ul li.menu7 img{cursor: pointer;}
+
+footer .footer-wrapper .footer-info .footer-menu ul li{margin-right: 26px; padding-top: 2px;}
+/* SK윤리경영제보 */
+.sk_ethics{position: relative; display: block;}
+.sk_ethics:after{content:""; position: absolute; left: 0; top: -1px; width: 29px; height: 22px; background-image: url(/resources/img/spr-common.png); 
+	background-repeat: no-repeat; background-position: -446px -1209px; -webkit-background-size: 1347px 1290px;
+	background-size: 1347px 1290px; overflow: hidden;
+}
+.sk_ethics a{padding-left: 37px;}
+
+/* 210222 저해상도 모니터 quick 메뉴 대응  */
+@media only screen and (max-height:650px) {
+	.quick-menu {top:95px !important; width:80px !important;}
+	.quick-menu ul li a {width:80px; height:80px; padding-top:15px !important; font-size:12px;}
+}
+
+
+
+/* 210225 footer ISMS-P 인증 마크 삽입 */
+footer .footer-wrapper .footer-info .footer-menu {width:870px; margin-left:130px;}
+footer .footer-wrapper .footer-info .footer-menu ul li.sk_ethics {float:right;}
+footer .footer-wrapper .footer-info .site-info {margin-left:130px;}
+footer .footer-wrapper .footer-info .site-info span:nth-child(8) {margin-left:0px;}
+footer .footer-wrapper .footer-info .site-info span:nth-child(8):after {display: none;}
+footer .footer-wrapper .footer-info .copyright {margin-left:130px;}
+footer .footer-wrapper .footer-info .award {top:64px;}
+footer .footer-wrapper .footer-info .award p {display:inline-block; width:290px;}
+footer .footer-wrapper .footer-info .award p img {float:left; margin-right:5px;}
+footer .footer-wrapper .footer-info .award p span {display:block; margin-top:3px; font-size:11px; color:#aaa; line-height:17px; letter-spacing:-0.8px;}
+footer .footer-wrapper .footer-info .award p span em {color:#fff;}
+
+/* 20210705 저해상도 모니터 quick 메뉴수정  */
+@media only screen and (max-height:650px) {
+    .quick-menu {
+        top: 152px !important;
+        width: 99px !important;
+        right: -19px !important;
+    }
+	.quick-menu.quick-menu_21 ul li a {width: 80px !important;height: 70px !important;font-size: 12px !important;}
+    .quick-menu.quick-menu_21 ul li.menu1_1 a:before {
+        width: 20px;
+        height: 20px;
+        background-position: 0 0;
+        background-size: 39px;  
+    }
+    .quick-menu.quick-menu_21 ul li.menu2_1 a:before {
+        width: 22px;
+        height: 25px;
+        background-size: 45px;
+        background-position: 0 -26px;
+    }
+    .quick-menu.quick-menu_21 ul li.menu3_1 a:before {
+        width: 18px;
+        height: 23px;
+        background-size: 38px;
+        background-position: 0 -43px;
+    }
+    .quick-menu.quick-menu_21 ul li.menu4_1 a:before {
+        width: 18px;
+        height: 21px;
+        background-size: 38px;
+        background-position: 0 -67px;
+    }
+    .quick-menu.quick-menu_21 ul li.menu5_1 a:before {
+        width: 23px;
+        height: 18px;
+        background-size: 36px;
+        background-position: -7px -85px;
+    }
+    /*
+    .quick-menu ul li.menu1 a:before {
+        background-image: url(/resources/img/icon_newQu1.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu1:hover a:before {
+        background-image: url(/resources/img/icon_newQu1_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu2 a:before {
+        background-image: url(/resources/img/icon_newQu2.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu2:hover a:before {
+        background-image: url(/resources/img/icon_newQu2_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu3 a:before {
+        background-image: url(/resources/img/icon_newQu3.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu3:hover a:before {
+        background-image: url(/resources/img/icon_newQu3_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu8 a:before {
+        background-image: url(/resources/img/icon_newQu4.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu8:hover a:before {
+        background-image: url(/resources/img/icon_newQu4_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu4 a:before {
+        background-image: url(/resources/img/icon_newQu5.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu4:hover a:before {
+        background-image: url(/resources/img/icon_newQu5_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu5 a:before {
+        background-image: url(/resources/img/icon_newQu6.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu5:hover a:before {
+        background-image: url(/resources/img/icon_newQu6_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu6 a:before {
+        background-image: url(/resources/img/icon_newQu7.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    .quick-menu ul li.menu6:hover a:before {
+        background-image: url(/resources/img/icon_newQu7_ov.png);
+        background-position: 50%;
+        -webkit-background-size: auto;
+        background-size: auto;
+    }
+    */
+}

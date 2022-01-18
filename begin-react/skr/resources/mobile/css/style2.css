@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+/* 20180314 �̺�Ʈ ������ ��� ���� ����*/
+header.sub .header-placeholder {top: 54px;}
+
+
+/*������ 20180402*/
+.counsel-rent-chatting .info-time li:nth-child(1) {
+    background: url(/resources/mobile/img/common/icon_counsel_direct.png) no-repeat 3px 14px;
+    padding: 20px 0 10px 70px;
+}
+.counsel-rent-chatting .info-time li:nth-child(2) {
+    background: url(/resources/mobile/img/cscenter/icon_counsel01.png) no-repeat 3px 14px;
+    border-top: 1px solid #f5f5f5;
+    padding: 20px 0 10px 70px;
+}
+.counsel-rent-chatting .info-time li:nth-child(3) {
+    background: url(/resources/mobile/img/cscenter/icon_counsel02.png) no-repeat 3px 14px;
+    border-top: 1px solid #f5f5f5;
+}
+.counsel-rent-chatting .info-time li a:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(/resources/mobile/img/common/icon_talk.png) no-repeat center;
+    -webkit-background-size: 25px 23px;
+    background-size: 25px 23px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.counsel-rent-chatting .info-time li strong .direct_color {
+    color: #eb444b;
+}
+.counsel-rent-chatting .info-time li a{
+	display: inline-block;
+    margin-top: 10px;
+	color: #333;
+}
+.counsel-rent-chatting .link-counsel>li.tel_icon a:before {
+    background: url(/resources/mobile/img/common.png) no-repeat;
+    background-position: -316px -291px;
+    -webkit-background-size: 340px 500px;
+    background-size: 340px 500px;
+}
+
+/* ����� ī�� CLUB MOST ���� 20180509*/
+.col-3.clubmost{display: inline-block;}
+.card-sk-welfare.clubmost>div:nth-of-type(1) {padding-right: 0px;}
+.card-sk-welfare.clubmost>div:nth-of-type(2) {border-left: 0; padding-left: 0px;}
+.list-bullet.linespace.w50{display: inline-block; width:50%; vertical-align: top;}
+.btn-style-f12 .btn.clubmost{font-size: 13px !important; width: 160px;}
+.wrap-btn.clubmost{position: absolute; top: -30px; right: 1px;text-align: inherit;}
+
+/* hotdeel ������ �߰� 20180531*/
+.contents.hotdeal{margin-top: 110px; padding: 0px 14px 0px 14px;}
+.contents.hotdeal .direct-serch-result .result-list > li .info-tab .tab-item.select {color: #eb444b; border-bottom: 2px solid #eb444b;}
+.section-mypage.hotdeal .estimate {padding-bottom: 10px;}
+.section-mypage.hotdeal .estimate .car-info.hotdeal_line ul{padding-top: 15px;}
+.section-mypage.hotdeal .estimate .car-info.hotdeal_line ul li{float: none; padding-left: 70px; width:100%;}
+.section-mypage.hotdeal .estimate .car-info.hotdeal_line ul li .subj{color: #888;}
+.section-personal-carinfo.hotdeal .direct-serch-result .result-list .topfix{padding: 0 14px;}
+.section-personal-carinfo.hotdeal .direct-serch-result .result-list > li .info-tab{padding: 0 14px;}
+.section-personal-carinfo.hotdeal .direct-serch-result {margin: 0 -14px; padding: 0 14px; border-top: 0;}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .wrap-btn{position: inherit; top: 0; right: 0;}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .wrap-btn .btn{width: 100%; height: auto; font-size: 15px; padding: 10px 0;}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .info {position: relative; height: 105px; background: none; z-index: inherit; padding: 25px 0 0 145px;}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .info .marketing-ment{display: block}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .info .img{display: block}
+.section-personal-carinfo.hotdeal .direct-serch-result.fixed .result-list .info .name{margin-bottom: 10px; line-height: inherit; text-align: left; padding: 0;}
+.section-personal-carinfo.hotdeal.fixed .direct-serch-result .result-list .topfix {position: fixed; top: 55px; width: 100%; height: 44px; border-bottom: 1px solid #ddd; transition: top 0.3s;}
+.hotdeal_rent{padding: 23px 15px; text-align: left; font-size: 13px; background-color: #f5f5f5; }
+
+/* ������ best/hotdeal �߰� 20180604 */
+.flag.best {color: rgb(246, 129, 33); font-weight: normal;}
+.flag.sp {color: rgb(235, 68, 75); font-weight: normal;}
+
+/* ����� ���� �߰� 20180905 */
+.penalty_title{height: 42px; line-height: 42px; display: block; margin-top: 10px;}
+.font16{font-size:16px;}
+.relative.overflow{overflow: hidden;}
+.penalty_wrap .penalty_content{width: 46%; display: inline-block; vertical-align: top;}
+.penalty_wrap .penalty_content.division{border-right: 1px solid #ddd; margin: 0 2%;}
+.penalty_wrap .penalty_content > span{font-size: 16px; color: #000;}
+.penalty_wrap .penalty_content .pay{font-size: 20px; margin-right: 10px; margin-top: 20px; color: #d4d4d4; display: block; text-align: right;}
+.penalty_wrap .penalty_content .pay.red{color: #e9454c;}
+.section-bg-gray.pd15{padding-bottom: 15px !important; margin-bottom: 0px !important;}
+.penalty_wrap .penalty_content2{width: 100%; display: inline-block; vertical-align: top;}
+.list-bullet li span{position: relative;/*  display: block; padding-left: 10px; */}
+.list-bullet li span:before{content: "-"; position: absolute; left: 0; top: 0px;}
+.list-bullet li span#ResTime:before{content: "";}
+.list-bullet li span#RtnTime:before{content: "";}
+.list-bullet.no-before li span:before {display:none;}
+/* �� Ȯ�����ּ��� ������ */
+.modal-bottom .guidbox{position: absolute; top: -39px; left: 5%; width: 90%; height: 50px; border-radius: 100px; background-color: #333333;}
+.modal-bottom .guidbox span{display: block; color: #fff; font-size: 15px; line-height: 50px; margin-left: 55px;}
+.modal-bottom .guidbox > img{position: absolute; top: 6px; left: 7px;}
+.modal-bottom .guidbox .close{position: absolute; top: 16px; right: 15px;}
+.modal-bottom .guidbox .mark_arrow{top: 44px; left: 44px;}
+@media screen and (max-width:460px){
+	.modal-bottom .guidbox span {font-size: 12px;}
+}
+@media screen and (max-width:390px){
+	.modal-bottom .guidbox span {width: 205px; line-height: 18px; padding-top: 6px;}
+}
+@media screen and (max-width:350px){
+	.modal-bottom .guidbox span {width: 180px; line-height: 18px; padding-top: 6px;}
+}
+
+
+/* �������� ���� �߰� */
+
+.borderorange{border:1px solid #f68121 !important;}
+
+/* 예약 확인 */
+.modal-box.ios-slide.corp_confirm{padding: 0 0 40px 0;}
+
+
+/* 비정기적 팝업 */
+.modal-irregularity {/* width:640px; */}
+.modal-large article {}
+.modal-irregularity > article {}
+.pop_tab_inner {}
+.modal-irregularity .pop_tab_head {display:flex;flex-wrap:wrap;}
+.modal-irregularity .pop_tab_head a {display:flex;width:33.127%;height:38px;font-size:14px;color:#c0ccca;background:#41615e;border:1px solid #c0ccca;justify-content:center;align-items:center}
+.modal-irregularity .pop_tab_head a.on {color:#fff;background:#558d82;}
+.modal-irregularity .pop_tab_head a:nth-child(1),
+.modal-irregularity .pop_tab_head a:nth-child(4) {border-left:0}
+.modal-irregularity .pop_tab_head a:nth-child(3),
+.modal-irregularity .pop_tab_head a:nth-child(6) {border-right:0}
+.modal-irregularity .article-content {padding:0;}
+.modal-irregularity .pop_tab_cont img {display:none;}
+.modal-irregularity .pop_tab_cont img.on {display:block;}
+.modal-irregularity {}
+.modal-irregularity {}

@@ -1,0 +1,107 @@
+@CHARSET "EUC-KR";
+.mevent_box{padding:10px 0;margin: 10px 0 0 0;}
+
+.mevent_list li:before {
+    content: "EVENT";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 43px;
+    height: 20px;
+    background-color: #f68121;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+}
+               
+.mevent_list li {
+    font-family: "NanumBarunGothicLight";
+    font-size: 12px;
+    color: #666;
+    line-height: 16px;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 8px;
+}
+
+.mevent_list:first-child li{margin-top:0 !important;} 
+
+.mbtn-tooltip-plus{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 4px;
+    border: 1px solid #ddd;
+    color:#fff;
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.mbtn-tooltip-plus:after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+   	background-image: url(/resources/mobile/img/common.png);
+    background-repeat: no-repeat;
+    background-position: -86px -159px;
+    -webkit-background-size: 340px 500px;
+    background-size: 340px 500px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.eventpop_box{display: block;position: relative;}
+.eventpop_box h4 {font-size: 14px;color: #333;font-weight: 500; margin-bottom: 10px;}
+
+
+.q_banner{
+	margin:-20px -14px -20px;
+	height: 86px;
+	background-image: url(/resources/mobile/img/longterm/bg_event_banner_m.jpg);
+	background-size: cover;
+	padding: 25px 52px;
+}
+.q_banner div{
+	font-family: NanumBarunGothic;
+	font-weight: 400;
+}
+.q_banner div:first-child{
+	font-size: 15px;
+	color:#333;
+	line-height: 21px;
+	float:left; 
+}
+.q_banner div:last-child{
+	position: absolute;
+	right: 0;
+	font-size: 12px;
+	color:#fff;
+	width: 125px;
+	height: 37px;
+	background-color: #444;;
+	display: inline-block;
+	line-height: 37px;
+	text-align: center;
+}
+
+/* 200528 �α���â �����߰� */
+.aj_join{width: 100%; box-sizng: border-box; text-align: center; padding-top: 25px; font-size: 13px;}
+#login_msg{top:130px;}
+
+@media screen and (min-width:325px) and (max-width:368px){
+	.q_banner div:last-child{ width: 110px;}
+}
+
+@media screen and (max-width:325px){
+	.q_banner div:last-child{ width: 72px;}
+	.aj_join{letter-spacing: -.07em;}
+}

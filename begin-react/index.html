@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="css/mobiscroll.jquery.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+                fn_default_datepicker();
+        });
+
+        function fn_default_datepicker()
+        {
+            var start = $( "#datepicker_start" ).datepicker({
+                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                ,changeYear: true //콤보박스에서 년 선택 가능
+                ,changeMonth: true //콤보박스에서 월 선택 가능
+                //,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+                //,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+                //,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트
+                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+            });
+
+            var end = $( "#datepicker_end" ).datepicker({
+                dateFormat: 'yy-mm-dd' //Input Display Format 변경
+                ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+                ,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+                ,changeYear: true //콤보박스에서 년 선택 가능
+                ,changeMonth: true //콤보박스에서 월 선택 가능
+                //,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시
+                //,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+                //,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+                ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트
+                ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+                ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
+                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+                ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+                ,minDate: "-6M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+                ,maxDate: "0M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+                ,defaultDate: "+1w"
+            });
+
+            //초기값을 오늘 날짜로 설정
+            $('#datepicker_start').datepicker('setDate', '-7D'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+            $('#datepicker_end').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+        }
+
+        function getDate( element ) {
+            var date;
+            var dateFormat = "yy-mm-dd";
+            try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+            date = null;
+            }
+            return date;
+        }
+
+    </script>
+</head>
+<body>
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <label>시작일</label>
+        </div>
+        <div class="ui-block-b">
+            <label>마지막일</label>
+        </div>
+        <div class="ui-block-c">
+        </div>
+    </div>
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <input type="text" id="datepicker_start" readonly="readonly">
+        </div>
+        <div class="ui-block-b">
+            <input type="text" id="datepicker_end" readonly="readonly">
+        </div>
+        <div class="ui-block-c">
+            <button id="date_search">날짜검색</button>
+        </div>
+    </div>
+
+    <label>
+        Time picker
+        <input id="time-12h-picker" mbsc-input data-input-style="outline" data-label-style="stacked" placeholder="Please select..." />
+    </label>
+    <input id="input-picker" />
+<script>
+$(document).ready(function(){
+
+    $("#datepicker_start").on("click",function(){
+
+    });
+
+     $("#datepicker_start").on("change",function(e){
+         var end = $( "#datepicker_end" ).datepicker( "option", "minDate", getDate( e.target ) );
+     });
+
+     $("#datepicker_end").on("change",function(e){
+
+     });
+
+     $("#date_search").on("click",function(){
+         var start = $("#datepicker_start").val();
+         var end = $("#datepicker_end").val();
+     });
+
+    //  mobiscroll.setOptions({
+    //     theme: 'ios',
+    //     themeVariant: 'light'
+    // });
+
+    $(function () {
+        $('#time').mobiscroll().datepicker({
+            controls: ['time'],
+            timeFormat: 'h:mm A',
+            touchUi: true
+        });
+
+        $('#demo-12h').mobiscroll().datepicker({
+            controls: ['time'],
+            timeFormat: 'HH:mm'
+        });
+
+        $('#demo-24h').mobiscroll().datepicker({
+            controls: ['time'],
+            timeFormat: 'h:mm A'
+        });
+
+        $('#demo-hms').mobiscroll().datepicker({
+            controls: ['time'],
+            timeFormat: 'HH:mm:ss',
+            headerText: 'Time: {value}'
+        });
+        $('#time-12h-picker').mobiscroll().datepicker({
+            controls: ['time'],
+            timeFormat: 'h:mm A',
+            touchUi: true
+        });
+    });
+});
+</script>
+</body>
+</html>

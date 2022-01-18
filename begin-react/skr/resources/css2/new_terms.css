@@ -1,0 +1,22 @@
+@CHARSET "EUC-KR";
+
+.threesix{text-align: center;border-top:1px solid #ddd;border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.threesix tr td{border-right:1px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0;letter-spacing: -0.5px;vertical-align: middle;}
+
+.pointfont{font-family: "NanumBarunGothicLight";line-height: 16px;font-size: 12px;}
+
+/* ����� */
+.agree_font_bold{font-size: 14px !important;font-family: NanumBarunGothic !important;}
+
+/* ��2������ */
+.zero{border-bottom: none !important;padding-bottom: 0 !important;}
+.borderzero{border-bottom: none !important;}
+
+/* �������� ���� Ȱ�� ���� �۾� ���� */
+.color_bold{color:#222 !important;}
+
+/* ��Ź���̺� */
+.consignment tbody td{padding: 13px 10px;}
+
+/* �ڼ������� ��ư */
+.more-bt {font-size: 12px; padding: 3px 10px; color: #333; border: 1px solid #ddd;}

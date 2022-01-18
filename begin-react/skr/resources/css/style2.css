@@ -1,0 +1,414 @@
+/*�⑥쥒而쇽옙苑깍옙苑� 20180402*/
+.list-definition.mb30{margin-bottom: 30px !important;}
+.chat-web.bt0{border-top: 0;}
+.chat-info .dl-link dd .time-box strong.mt20{margin-top: 20px;}
+.chat-info .dl-link dt strong .direct_color{display: inline-block; color:#eb444b; }
+
+/* 占쎈뼄占쎌뵠占쎌젂占쎈뱜 占쎌뵬占쎈뻻占쎌읅 占쎌삺�⑨옙 占쎈꺖筌욑옙 占쎈르�뵳占� 占쎈솚占쎈씜 20180426*/
+.modal-pop.page{
+	display: none;
+    position: inherit;
+    left: initial;
+    top: initial;
+    margin-left: initial;
+    width: initial;
+    z-index: 0;
+}
+.modal-pop#modal-finish-alret2 {height: 444px; margin-top: initial;}
+.modal-pop#modal-finish-alret2 article .article-content p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 91px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.modal-pop#modal-finish-alret2 article .article-content p:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -36px;
+    width: 72px;
+    height: 72px;
+    background-image: url(/resources/img/spr-common.png);
+    background-repeat: no-repeat;
+    background-position: -1093px -148px;
+    -webkit-background-size: 1279px 1238px;
+    background-size: 1279px 1238px;
+    text-indent: 1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.btn-box.page{
+	text-align: center;
+}
+
+/* 筌롢끇苡�占쎈뼏 燁삳�諭� CLUB MOST 癰귨옙野껓옙 20180509*/
+.membership-cardtype-article .inner strong {font-size: 26px;}
+.membership-cardtype-view .info-view .list-definition .card-membership-list dl .cl-point2 {font-size: 22px;}
+.card-membership-list .list-thumbnail .figcaption dl {margin: 7px 0 12px 30px;}
+.membership-cardtype-article .inner .thumbnail {width: 151px;}
+.membership-cardtype-article .inner .thumbnail img {width: 151px;}
+.membership-cardtype-view .detail-view .list-thumbnail .thumbnail img {width: 151px;}
+.membership-service-greet .member_btn{text-align: right; margin-bottom: 35px;}
+.membership-cardtype-view .detail-view .list-thumbnail.r1{position: relative; padding: 0 70px 100px;}
+.membership-cardtype-view .detail-view .list-thumbnail.r1 .bottom-text{position: absolute; left: 72px; bottom: 25px;}
+
+.membershipcard-benefit-list ul li {margin-top: 30px;}
+.membershipcard-benefit-list ul li:first-child:after {width: 0px;}
+.membershipcard-benefit-list ul li .thumbnail img {width: 151px;}
+
+/* 190529 異붽� */
+.list-info-span{font-size:16px;line-height: 26px;}
+
+
+/* �⑥쥒而쇽옙苑깍옙苑� - 占쎈펶占쎈뻼占쎈뼄占쎌뒲嚥≪뮆諭� - pdf 占쎄틙�빊遺쏙옙 20180510*/
+.header-group.pdf-text{border-bottom: 1px solid #ddd;padding-top: 0px;}
+
+/* 甕곕벡�뵥 筌띾뜆�뵠占쎌젉占쎄숲燁삼옙 占쎄텢�⑥쥓沅∽옙肉� 占쎈땾占쎌젟 20180530 */
+.period-serach .period-calendar dl.input-type .select-box {width: 105px;}
+.select2-results__option {padding: 7px 10px;}
+.select2-container--default .select2-selection--single .select2-selection__arrow {right: 10px;}
+.period-serach .period-calendar dl.input-type input {width: 105px;}
+input[type=text].w105{padding: 10px 12px;}
+.select2-container .select2-selection--single .select2-selection__rendered {padding-left: 10px; padding-right: 20px;}
+
+/* 占쎈뼄占쎌뵠占쎌젂占쎈뱜 hotdeal 占쎈읂占쎌뵠筌욑옙 �빊遺쏙옙  20180601 */
+.breadcrumbs.hotdeal{text-align: center;}
+.breadcrumbs.hotdeal img{vertical-align: middle;}
+.breadcrumbs.hotdeal h2{display: inline-block; margin-left: 20px;}
+.header-group.hotdeal{border-top: 1px solid #ddd; padding-top: 20px; margin-top: 0px;}
+.header-hotdeal {font-size: 14px; text-align: right; margin-top: -25px; margin-bottom: 20px;}
+.car-list--estimate-information .car-list__listbox {height: 365px;}
+.car-list--estimate-information .car-list__caption-tag+.car-list__caption-title.hotdeal,
+.car-list--estimate-information .car-list__caption-tag+.car-list__caption-title.hotdeal tr{height: 100px;}
+.car-list--estimate-information .car-list__caption-tag+.car-list__caption-title.hotdeal tr td{vertical-align: middle;}
+.car-list--estimate-information .car-list__item .car-list__sticker.hotdeal {background: #eb444b;}
+.car-list--estimate-information .car-list__detail.hotdeal {padding-top: 0px; padding-bottom: 0px; border-top: 1px solid #ddd; height: 60px;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li:nth-child(1) {width: 20%; line-height: 60px;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li:nth-child(1):before {top: 28px;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li:nth-child(2) {width: 80%; line-height: 18px;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li:nth-child(2):before{content: ""; position: absolute; left: 0; top: 0px; width: 0px; height: 0px; background: #fff;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li table tr{height: 60px;}
+.car-list--estimate-information .car-list__detail.hotdeal .list-info li table tr td{vertical-align: middle;}
+.car-list--estimate-information .car-list__caption-btn.hotdeal {padding-top: 0px;}
+.car-list--estimate-information .car-list__caption-btn.hotdeal .btn.btn-line4{width: 100%}
+.estimate-information-action.hotdeal{margin: 30px 0 60px;}
+.article-content.hotdeal {padding: 0px;}
+.cont-hotdeal{font-size: 16px; margin-top: 25px;}
+.membership-use-information .list-type.long .list{width: 1000px;}
+.membership-use-information .list-type.long .dl-link dd .btn-box {padding-top: 0px; margin-top: 0px;}
+.membership-use-information .list-type.long .dl-link {padding: 5px 10px;}
+.membership-use-information .list-type.long.v3 .list {height: 167px;padding: 18px 30px;}
+.membership-use-information .list-type.long .dl-link dd .btn-box:after {top: -58px;}
+
+/* 占쎈뼄占쎌뵠占쎌젂占쎈뱜 野꺫딆읅鈺곌퀬�돳 占쎈땾占쎌젟  20180601 */
+.estimate-item__caption-text.icon tr td{vertical-align: middle;}
+.radio.v6.icon{display: inline-block; vertical-align: middle;}
+.radio.v6.icon label{padding: 0px;}
+.car_name{display: inline-block; width: 100%; vertical-align: middle;}
+
+/* �④쑴鍮잞옙�젟癰귨옙 */
+.download-box .btn.mt10 {margin-top: 10px;}
+
+/* 餓λ쵎猷꾬옙鍮먲쭪占� 占쎌맄占쎈튋疫뀐옙 �빊遺우젟 占쎈솚占쎈씜 */
+.modal-pop.penalty{height: 490px!important; margin-top: -240px!important;}
+.modal-pop.penalty .penalty_wrap{margin-top: 50px;}
+.modal-pop.penalty .penalty_wrap .penalty_top span{font-size: 16px; color: #000;}
+.modal-pop.penalty .penalty_wrap .penalty_top span input{margin: 0 5px;}
+.modal-pop.penalty .penalty_wrap .penalty_top .line{display: inline-block; background-color: #ddd; width: 2px; height: 29px; margin: 0 10px 0 13px; vertical-align: middle;}
+.modal-pop.penalty .penalty_wrap .penalty_content{padding: 4px 30px; border: 1px solid #ddd; background-color: #f7f7f7; margin-top: 25px;}
+.modal-pop.penalty .penalty_wrap .penalty_content > span{display: inline-block; width: 49%; font-size: 16px; color: #000;}
+.modal-pop.penalty .penalty_wrap .penalty_content .pay{font-size: 26px; vertical-align: middle; margin-left: 10px; color: #d4d4d4;}
+.modal-pop.penalty .penalty_wrap .penalty_content .pay.red{color: #e9454c;}
+.modal-pop.penalty .penalty_wrap .penalty_assist{position: relative; top: 5px; left: 410px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_bt{display: inline-block; cursor: pointer; position: relative; left: 3px; top: 5px; width: 18px;height: 18px; background-image: url(/resources/img/spr-common.png); background-position: -893px -714px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist2{display: block; margin-top: 25px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop{display: none; position: absolute; top: 0; width: 100%; height: 200px; right: 410px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .pop_area{position: absolute; display: block; width: 100%; height: 220px; z-index: 100;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap{margin-top: 35px; padding: 15px 30px; border: 2px solid #f68121; background-color: #fff;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap img{position: absolute; top: 27px; right: 16px; width: 13px; height: 10px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap .penalty_pop_content{margin-bottom: 20px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap .penalty_pop_content:last-child{margin-bottom: 0px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap .penalty_pop_content span{display: block; margin-left: 10px; line-height: 20px; font-size: 13px;}
+.modal-pop.penalty .penalty_wrap .penalty_assist .penalty_pop .penalty_pop_wrap .penalty_pop_content .penalty_pop_title{margin-left: 0px; margin-bottom: 5px; font-size: 14px;}
+
+/* 癰귣똾肉뺝첎占쏙옙�뿯筌앹빖梨몌옙苑� 獄쏆뮄�닋占쎌뒄筌ｏ옙 占쎈솚占쎈씜 */
+.modal-pop.insurance{height: 390px!important; margin-top: -200px!important;}
+.modal-pop.insurance .insurance_wrap table th,
+.modal-pop.insurance .insurance_wrap table td{border: 1px solid #ddd; padding: 10px;}
+.modal-pop.insurance .insurance_wrap table th{border-left:0; background-color: #f8f8f8; color: #000; vertical-align: middle;}
+.modal-pop.insurance .insurance_wrap table td{border-right:0;} 
+.w28{width: 28%!important;}
+.modal-pop.insurance .insurance_wrap .input-field .input-row .input.essential input,
+.modal-pop.insurance .insurance_wrap .input-field .input-row .input.hyphen input {text-indent: 0;}
+.modal-pop.insurance .insurance_wrap .input-field .input-row .input.hyphen .text {left: -6px;}
+.modal-pop.insurance .insurance_wrap .btn.btn-fix1{margin-left: 5px;}
+.modal-pop.insurance .insurance_wrap .insurance_assist{display: block; margin-top: 15px; font-size: 14px;}
+.modal-pop.insurance .insurance_wrap.before{text-align: center; padding-top: 50px; box-sizing: border-box;}
+.modal-pop.insurance .insurance_wrap.before .btn.btn-fix1{display: block; margin: 80px auto 0;}
+
+/* 占쎌뿫筌△뫂�넇占쎌뵥占쎄퐣 占쎈솚占쎈씜 */
+.modal-pop.hire{width: 900px;}
+.modal-pop.hire .hire_select{position: absolute; top: 44px; left: 200px; width: 200px;}
+.modal-pop.hire .hire_wrap{width: 800px; height: 514px;}
+.modal-pop.hire .hire_wrap .rental_wrap{height: 415px; padding-right: 10px; overflow-y: scroll;}
+.modal-pop.hire .hire_wrap .rental_wrap.noscroll{overflow-y: initial; text-align: center; padding-top: 190px; box-sizing: border-box;}
+.modal-pop.hire .hire_wrap .rental_top{position: relative; overflow: hidden;}
+.modal-pop.hire .hire_wrap .rental_top .logo{position: absolute; right: 0; display: block; width: 107px; height: 51px; white-space: nowrap; overflow: hidden;}
+.modal-pop.hire .hire_wrap .rental_top .title{display: block; padding: 100px 0 70px; font-size: 30px; color: #000; line-height: 30px; text-align: center;}
+.modal-pop.hire .hire_wrap .rental_content span{display: block; margin-top:10px; font-size: 16px;}
+.modal-pop.hire .hire_wrap .rental_content table{width:100%;}
+.modal-pop.hire .hire_wrap .rental_content table,
+.modal-pop.hire .hire_wrap .rental_content table td{height: 40px; vertical-align: middle; padding: 14px 5px 11px; box-sizing: border-box; text-align: center; margin-top: 5px;}
+.modal-pop.hire .hire_wrap .rental_content table td{font-size: 12px; line-height: 14px; border: 1px solid #000;}
+.modal-pop.hire .hire_wrap .rental_content table th{height: 25px; background-color: #5f5f5f; color: #fff; text-align: left; padding-left: 15px;}
+.modal-pop.hire .hire_wrap .rental_content table th span{margin-left: 20px;}
+.modal-pop.hire .hire_wrap .rental_content table th .td_text{margin-left: 0; font-size: 11px;}
+.modal-pop.hire .hire_wrap .rental_content table .title{background-color: #c0c0c0; color: #000;}
+.modal-pop.hire .hire_wrap .rental_content table input[type="checkbox"]{position: relative; opacity: 1; top: -1px; left: 0;}
+.modal-pop.hire .hire_wrap .rental_bottom{margin-top: 80px; padding: 15px; overflow: hidden;}
+.modal-pop.hire .hire_wrap .rental_bottom span{display: block; font-size: 13px;}
+.modal-pop.hire .hire_wrap .rental_bottom span.rental_date{margin-top: 10px; text-align: center;}
+.modal-pop.hire .hire_wrap .rental_bottom span.rental_date2{margin-top: 30px; text-align: center; color: #000; font-size: 16px; margin-top: 160px;}
+.modal-pop.hire .hire_wrap .rental_bottom .rental_bottom_left{position: relative; float: left; margin-top: 30px;}
+.modal-pop.hire .hire_wrap .rental_bottom .rental_bottom_left img{position: absolute; bottom: -9px; right: 0; width: 69px; height: 69px;}
+
+/* 占쎌뵠占쎌뒠占쎄땀占쎈열占쎌넇占쎌뵥占쎄퐣 占쎈솚占쎈씜 */
+.modal-pop.history{width: 900px;}
+.modal-pop.history h3{display: inline-block;}
+.modal-pop.history .history_form{display: inline-block; vertical-align: super; margin-left: 10px; width: 65%;}
+.modal-pop.history .history_form input[type="text"]{width: 36%; margin: 0 5px;}
+.modal-pop.history .history_wrap{width: 800px; height: 514px;}
+.modal-pop.history .history_wrap .rental_wrap{height: 415px; padding-right: 10px; overflow-y: scroll;}
+.modal-pop.history .history_wrap .rental_wrap.noscroll{overflow-y: initial; text-align: center; padding-top: 190px; box-sizing: border-box;}
+.modal-pop.history .history_wrap .rental_top{position: relative; overflow: hidden;}
+.modal-pop.history .history_wrap .rental_top .logo{display: block; width: 107px; height: 51px; white-space: nowrap; overflow: hidden;}
+.modal-pop.history .history_wrap .rental_top .title{display: block; margin: 10px 0; /*padding: 10px 20px 8px;*/ color: #fff; font-size: 30px; line-height: 30px; /*background-color: #d64027;*/ text-align: right;}
+.modal-pop.history .history_wrap .rental_top .rental_right{position: absolute; top:10px; right: 0; text-align: right;}
+.modal-pop.history .history_wrap .rental_top .rental_right span{display: block; font-size: 11px;}
+.modal-pop.history .history_wrap .rental_content .content_title{color: #d64027;}
+.modal-pop.history .history_wrap .rental_content span{display: block; margin-top:20px; font-size: 16px;}
+.modal-pop.history .history_wrap .rental_content table{border-top: 2px solid #000;}
+.modal-pop.history .history_wrap .rental_content table,
+.modal-pop.history .history_wrap .rental_content table td{height: 31px; vertical-align: middle; padding: 10px 20px 8px; box-sizing: border-box; text-align: center; margin-top: 5px;}
+.modal-pop.history .history_wrap .rental_content table td{border-bottom: 1px solid #000; font-size: 12px; line-height: 14px;}
+.modal-pop.history .history_wrap .rental_content table .title{background-color: #f2f2ee; color: #000;}
+.modal-pop.history .history_wrap .rental_content table td strong{color: #000;}
+.modal-pop.history .history_wrap .rental_content .table2 td{border-left: 1px solid #000;}
+.modal-pop.history .history_wrap .rental_content .table2 td:first-child{border-left: 0;}
+.modal-pop.history .history_wrap .rental_content .table2 td:last-child{text-align: right; color: #000;}
+.modal-pop.history .history_wrap .rental_content .table2 .title:last-child{text-align: center;}
+.modal-pop.history .history_wrap .rental_content .table2 .total td{color: #000;}
+.modal-pop.history .history_wrap .rental_bottom{margin-top: 80px; padding: 15px; overflow: hidden;}
+.modal-pop.history .history_wrap .rental_bottom span{display: block; font-size: 13px;}
+.modal-pop.history .history_wrap .rental_bottom .rental_bottom_left{position: relative; float: left; margin-top: 30px;}
+.modal-pop.history .history_wrap .rental_bottom .rental_bottom_left img{position: absolute; bottom: -9px; right: 0; width: 69px; height: 69px;}
+.modal-pop.history .history_wrap .rental_bottom .rental_copy{float:left; margin-top: 30px; padding-top: 20px; border-top:1px solid #000;}
+.modal-pop.history .history_wrap .rental_bottom .rental_copy .fl{float:left;}
+.modal-pop.history .history_wrap .rental_bottom .rental_copy .fl span{display: inline-block; margin-right: 25px; font-size: 12px;}
+.modal-pop.history .history_wrap .rental_bottom .rental_copy .fl span strong{color: #000;}
+.modal-pop.history .history_wrap .rental_bottom .rental_copy .fl img{width: 100px; padding: 10px 0px 10px 45px;}
+
+
+
+
+/* 占쏙옙占쎈연�④쑴鍮잞옙�넇占쎌뵥占쎄퐣 占쎈솚占쎈씜 */
+.modal-pop.contract{width: 900px;}
+.modal-pop.contract .contract_wrap{width: 800px; height: 514px;}
+.modal-pop.contract .contract_wrap .rental_wrap{height: 415px; padding-right: 10px; overflow-y: scroll;}
+.modal-pop.contract .contract_wrap .rental_top{position: relative; overflow: hidden;}
+.modal-pop.contract .contract_wrap .rental_top .logo{display: block; width: 107px; height: 51px; white-space: nowrap; overflow: hidden;}
+.modal-pop.contract .contract_wrap .rental_top .title{display: block; padding: 20px 0 5px; font-size: 30px; color: #000; line-height: 30px; border-bottom: 4px solid #eb444b;}
+.modal-pop.contract .contract_wrap .rental_top .rental_right{position: absolute; top:10px; right: 0; text-align: right;}
+.modal-pop.contract .contract_wrap .rental_top .rental_right span{display: block; font-size: 11px;}
+.modal-pop.contract .contract_wrap .rental_top .rental_right strong{font-size: 14px; font-weight: 700;}
+.modal-pop.contract .contract_wrap .rental_top .rental_right .logo_right{color: #000;}
+.modal-pop.contract .contract_wrap .rental_top .product{float: left; width: 270px; margin-top: 10px;}
+.modal-pop.contract .contract_wrap .rental_top .product .pro_title{width: 60px; height: 35px; background-color: #eb444b; color: #fff; text-align: center; vertical-align: middle;}
+.modal-pop.contract .contract_wrap .rental_top .contract{float: right; width: 270px; margin-top: 10px;}
+.modal-pop.contract .contract_wrap .rental_top .contract .cont_title{width: 70px; height: 25px; font-size: 14px; color: #000; border: 1px solid #eb444b; background-color: #ffcc99; text-align: center; vertical-align: middle;}
+.modal-pop.contract .contract_wrap .rental_top table tr td{vertical-align: middle; border: 1px solid #eb444b; padding: 3px 5px 0; font-size: 13px;}
+.modal-pop.contract .contract_wrap .rental_content table,
+.modal-pop.contract .contract_wrap .rental_content table td{height: 31px; vertical-align: middle; padding: 6px 5px 3px; box-sizing: border-box; text-align: center; margin-top: 5px;}
+.modal-pop.contract .contract_wrap .rental_content table td{font-size: 12px; line-height: 14px; border: 1px solid #000;}
+.modal-pop.contract .contract_wrap .rental_content table td p{font-size: 12px; line-height: 14px;}
+.modal-pop.contract .contract_wrap .rental_content table th{height: 25px; background-color: #5f5f5f; color: #fff; text-align: left; padding-left: 15px; border: 1px solid #000; border-bottom: 0;}
+.modal-pop.contract .contract_wrap .rental_content table th span{margin-left: 20px;}
+.modal-pop.contract .contract_wrap .rental_content table th .td_text{margin-left: 0; font-size: 11px;}
+.modal-pop.contract .contract_wrap .rental_content table .title{background-color: #c0c0c0; color: #000;}
+.modal-pop.contract .contract_wrap .rental_content table input[type="checkbox"]{position: relative; opacity: 1; top: -1px; left: 0;}
+.modal-pop.contract .contract_wrap .rental_bottom{border: 1px solid #000; margin-top: 5px; padding: 15px; overflow: hidden;}
+.modal-pop.contract .contract_wrap .rental_bottom span{display: block; font-size: 13px;}
+.modal-pop.contract .contract_wrap .rental_bottom span.rental_date{font-weight: 700; padding: 0 30px; color: #000;}
+.modal-pop.contract .contract_wrap .rental_bottom span.rental_date2{margin-top: 10px; text-align: center;}
+.modal-pop.contract .contract_wrap .rental_bottom .rental_bottom_left{position: relative; float: left; margin-top: 30px;}
+.modal-pop.contract .contract_wrap .rental_bottom .rental_bottom_left img{position: absolute; bottom: -23px; right: 0; width: 69px; height: 69px;}
+
+
+
+
+
+/*占쎄맒占쎈뼖占쎈뻿筌ｏ옙 獄쏉옙 占쎈뼄占쎌뵠占쎌젂占쎈뱜 �④쑴鍮� 甕곌쑵�뱣*/
+.btn-box-all {width:240px;top:10px;right:15px;position:absolute;}
+.btn2 {display:inline-block;line-height:18px;font-size:14px;text-align:center;vertical-align:top;box-sizing: border-box;overflow: hidden;}
+
+.btn-box-gray{background-color:#333333;width:115px;height:50px;position:absolute;padding:5px 0;}
+.btn-box-red{right:0;background-color:#b5131a;width:115px;height:50px;position:absolute;padding:5px 0;}
+
+.btn-box-gray span{font-size:11px;color:#9a9a9a;line-height:10px;text-align:center }
+.btn-box-red span{font-size:11px;color:#d69597;line-height:10px;text-align:center}
+
+.btn-box-gray a, .btn-box-red a{color:#fff;text-decoration:none;}	
+
+
+
+/*占쎄맒占쎈뼖占쎈뻿筌ｏ옙 獄쏉옙 占쎈뼄占쎌뵠占쎌젂占쎈뱜 �④쑴鍮� 占쎈툧占쎄땀 �빊遺쏙옙*/
+.bg-line-new{box-sizing: border-box;border: 1px solid #ddd;border-top:1px solid #666666;width:100%;height:180px}
+.bg-line-new div{width:47%;float:left;padding: 17px 0 20px 28px;}
+.bg-line-new div:first-child{border-right:1px solid #ddd}
+
+.bg-line-new-ul li{position:relative;font-size:14px;line-height:18px;padding:7px 0 0 10px;}
+.bg-line-new-ul li:before{content:"";position:absolute;left:0;top:13px;width:3px;height:3px;background:#666;}
+
+.bg-line-new-p{padding-bottom:25px;font-size:18px;color:#333333 !important;}
+	
+
+/*占쎄맒占쎈뼖占쎈뻿筌ｏ옙 獄쏉옙 占쎈뼄占쎌뵠占쎌젂占쎈뱜 �④쑴鍮� 甕곌쑵�뱣 筌뤴뫀而�占쎌뵬*/		
+.wrap-btn-new{width:100%;}
+.wrap-btn-new div{width:50%;float:left;text-align:center;height:60px;padding:10px;}
+.wrap-btn-new-tran div{width:100%;float:left;text-align:center;height:60px;padding:10px;}
+
+.btn-box-gray-m{background-color:#444444;}
+.btn-box-red-m{background-color:#eb444b;}
+
+.btn-box-gray-m span{font-size:11px;color:#bababa;line-height:10px;text-align:center } 
+.btn-box-red-m span{font-size:11px;color:#f9d3d4;line-height:10px;text-align:center}
+   
+.btn-box-gray-m a, .btn-box-red-m a{color:#fff;text-decoration: none;}	
+
+
+/*占쎄맒占쎈뼖占쎈뻿筌ｏ옙 獄쏉옙 占쎈뼄占쎌뵠占쎌젂占쎈뱜 �④쑴鍮� 占쎈툧占쎄땀 �빊遺쏙옙 筌뤴뫀而�占쎌뵬*/
+.bg-line-new-m{padding-top:15px}
+.bg-line-new-m div{padding:15px 0;}
+.bg-line-new-m div:last-child{padding:15px 0 0 0;}
+
+.bg-line-new-p-m{line-height:16px;font-size:15px;padding-bottom:10px;}
+
+.bg-line-new-ul-m li{position:relative;font-size:12px;line-height:15px;padding:5px 0 0 10px;}
+.bg-line-new-ul-m li:before{content:"";position:absolute;left:0;top:10px;width:3px;height:3px;background:#666;}	
+
+
+
+/* �뜮袁⑨옙筌롳옙 占쎌뵥占쎈뇵 �꽴占쏙옙�졃 css */
+.modal-pop.insurance .insurance_wrap table img,
+.modal-pop.hire .hire_wrap .rental_content table img,
+.modal-pop.history .history_wrap .rental_content table img,
+.modal-pop.contract .contract_wrap .rental_top table img,
+.modal-pop.contract .contract_wrap .rental_content table img{display: none;}
+
+
+@media print and (color){
+	
+	/*占쎈늄�뵳怨좊뱜 獄쏄퀗瑗� 占쎌뵥占쎈뇵*/
+	*{-webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+					color-adjust: exact !important;   /*Firefox*/
+					font-family: NanumBarunGothic,sans-serif !important;
+	}
+	
+	/*占쎌뿫筌△뫂�넇占쎌뵥占쎄퐣 占쎌뵥占쎈뇵占쎌뒠 �빊遺쏙옙*/
+	.noprint{display: none;}
+	.modal-pop.hire .hire_wrap{width: 100%;}
+	.modal-pop.hire .hire_wrap .rental_wrap{overflow-y: inherit;}
+	.modal-pop.hire .hire_wrap .rental_content table{}
+	.modal-pop.hire .hire_wrap .rental_content table,
+	.modal-pop.hire .hire_wrap .rental_content table th,
+	.modal-pop.hire .hire_wrap .rental_content table td{border-spacing: 0; border-collapse: collapse;}
+	.modal-pop.hire .hire_wrap .rental_content span{margin-top:20px;}
+	.modal-pop.hire .hire_wrap .rental_bottom span {margin-top:10px; font-size: 15px;}
+	
+	/*占쏙옙占쎈연�④쑴鍮� 占쎌넇占쎌뵥占쎄퐣 占쎌뵥占쎈뇵占쎌뒠 �빊遺쏙옙*/
+	.modal-pop.contract .contract_wrap{width: 100%;}
+	.modal-pop.contract .contract_wrap .rental_wrap{overflow-y: inherit;}
+	.modal-pop.contract .contract_wrap .rental_top table,
+	.modal-pop.contract .contract_wrap .rental_top table th,
+	.modal-pop.contract .contract_wrap .rental_top table td{border-spacing: 0; border-collapse: collapse;}
+	.modal-pop.contract .contract_wrap .rental_top table td{padding: 3px 5px 3px 0;}
+	.modal-pop.contract .contract_wrap .rental_content table{width: 100%;}
+	.modal-pop.contract .contract_wrap .rental_content table,
+	.modal-pop.contract .contract_wrap .rental_content table th,
+	.modal-pop.contract .contract_wrap .rental_content table td{border-spacing: 0; border-collapse: collapse;}
+	.modal-pop.contract .contract_wrap .rental_content table td {padding: 6px 5px 3px;}
+	.modal-pop.contract .contract_wrap .rental_bottom span {margin-top:5px; font-size: 15px;}
+	.modal-pop.contract .contract_wrap .rental_content table th{padding: 7px 0px 5px 15px;}
+	input[type=checkbox]{width: 18px!important; height: 18px!important; top:0!important; vertical-align: middle;}
+	.modal-pop.contract .contract_wrap .rental_content table th span {margin-left: 5px;}
+	
+	/*占쎌뵠占쎌뒠占쎄땀占쎈열 占쎌넇占쎌뵥占쎄퐣 占쎌뵥占쎈뇵占쎌뒠 �빊遺쏙옙*/
+	.modal-pop.history .history_wrap{width: 100%;}
+	.modal-pop.history .history_wrap .rental_wrap{overflow-y: inherit;}
+	.modal-pop.history .history_wrap .rental_content table{width: 100%; border-top: 2px solid #000;}
+	.modal-pop.history .history_wrap .rental_content table tr{width: 100%;}
+	.modal-pop.history .history_wrap .rental_content table,
+	.modal-pop.history .history_wrap .rental_content table th,
+	.modal-pop.history .history_wrap .rental_content table td{border-spacing: 0; border-collapse: collapse;}
+	.modal-pop.history .history_wrap .rental_bottom span{margin-top:10px; font-size: 16px;}
+	.modal-pop.history .history_wrap .rental_bottom .rental_copy .fl img{padding: 15px 0px 10px 45px;}
+	
+	/* 占쎌뵥占쎈뇵 �꽴占쏙옙�졃 css */
+	.modal-pop.insurance .insurance_wrap table img,
+	.modal-pop.hire .hire_wrap .rental_content table img,
+	.modal-pop.history .history_wrap .rental_content table img,
+	.modal-pop.contract .contract_wrap .rental_top table img,
+	.modal-pop.contract .contract_wrap .rental_content table img{display: block;}
+	
+	.modal-pop.hire .hire_wrap .rental_content table .title,
+	.modal-pop.history .history_wrap .rental_content table .title,
+	.modal-pop.contract .contract_wrap .rental_top .product .pro_title,
+	.modal-pop.contract .contract_wrap .rental_top .contract .cont_title,
+	.modal-pop.contract .contract_wrap .rental_content table .title,
+	.modal-pop.contract .contract_wrap .rental_content table .title p{text-indent: -9999px; font-size:0; line-height: 0; padding: 0;}
+	.modal-pop.contract .contract_wrap .rental_content table .title.noimg{text-indent: 0; font-size: 12px; line-height: 14px;}
+}
+
+
+
+/*Sales Partner 筌욑옙占쎌뜚占쎈릭疫뀐옙 占쎈읂占쎌뵠筌욑옙*/
+.bg-line1 .check_title{display: inline-block; margin-bottom:18px; font-size: 16px; color:#333;}
+.checkbox.v2 input[type=checkbox]+label:after, .checkbox.v2 input[type=checkbox]+label:before {left: 0; margin: -12px 0 0 0;}
+.checkbox.v2 label{display: inline-block;}
+.input-row span.radio{margin-right: 40px;}
+.input-row.mb10{margin-bottom: 10px;}
+.input-row.mb10 span.radio{display: inline-block; width: 38%;}
+.bg-line1 .check_part{margin-bottom: 45px;}
+.addFile .file-upload-wrapper {width: calc(100% - 100px); vertical-align: middle; float: none;}
+.addFile .msg-info.add{margin-left: 112px;}
+.addFile .file-upload-input {width: 630px!important; margin-left: 15px;}
+
+/* �몭占� 占쎌넇占쎌뵥占쎈퉸雅뚯눘苑�占쎌뒄 占쎈읂占쎌뵠筌욑옙 */
+.btn-box.guid{position: relative;}
+.btn-box.guid .guidbox{position: absolute; top: -48px; left: 25%; width: 350px; height: 36px; border-radius: 100px; background-color: #333333;}
+.btn-box.guid .guidbox span{color: #fff; font-size: 13px; line-height: 38px;}
+.btn-box.guid .guidbox > img{position: absolute; top: 6px; left: 7px;}
+.btn-box.guid .guidbox .close{position: absolute; top: 13px; right: 15px;}
+
+
+/* 비정기적 팝업 */
+.modal-irregularity {/* width:640px; */}
+.modal-large article {height: 460px;overflow-y:auto;}
+.modal-irregularity > article {width:640px;}
+.pop_tab_inner {max-width: 640px;margin: 0 auto;}
+.modal-irregularity .pop_tab_head {display:flex;flex-wrap:wrap;max-width:640px}
+.modal-irregularity .pop_tab_head a {display:flex;width:33.12%;height:34px;font-size:16px;color:#c0ccca;background:#41615e;border:1px solid #c0ccca;justify-content:center;align-items:center}
+.modal-irregularity .pop_tab_head a.on {color:#fff;background:#558d82;}
+.modal-irregularity .pop_tab_head a:nth-child(1),
+.modal-irregularity .pop_tab_head a:nth-child(4) {border-left:0}
+.modal-irregularity .pop_tab_head a:nth-child(3),
+.modal-irregularity .pop_tab_head a:nth-child(6) {border-right:0}
+.modal-irregularity .article-content {padding:0;}
+.modal-irregularity .pop_tab_cont img {display:none;}
+.modal-irregularity .pop_tab_cont img.on {display:block;}
+.modal-irregularity {}
+.modal-irregularity {}
+

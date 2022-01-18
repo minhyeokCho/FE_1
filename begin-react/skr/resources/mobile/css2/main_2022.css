@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/* 2022 SK렌터카 모바일 리뉴얼 메뉴 */
+
+/* reset */
+html {overflow:visible;}
+.goView {position:absolute; left:0; top:0; height:100%; width:100%;}
+.blind {overflow:hidden; font-size:0; line-height:0; position:absolute; height:0; width:0;}
+
+/* setting */
+.skrMainRenew {padding-top:10px; background-color:#f8f8f8;}
+.formChk input {border:none; font-size:0; line-height:0; opacity:0; position:relative; left:-10px; top:-10px; height:0 !important; width:0 !important; margin:0 !important;}
+.formRdo input {border:none; font-size:0; line-height:0; opacity:0; position:absolute; left:-10px; top:-10px; height:0 !important; width:0 !important; margin:0 !important;}
+
+
+/* 텍스트 */
+.txt_16 {font-size:16px; font-weight:bold; color:#222; line-height:1.375; letter-spacing:-0.002em;}
+
+/* 버튼 */
+.btnWrap {display:flex; overflow:hidden; margin-top:16px;}
+.btnWrap.btnWrap02 .btnDef {flex:1;}
+.btnWrap.btnWrap02 .btnDef + .btnDef {flex:2;}
+.btnWrap .btnDef {display:inline-block; font-weight:bold; flex:1; color:#fff; font-size:18px; background:#FF7A00; border-radius:4px; height:48px; line-height:48px; box-sizing:border-box; text-align:center;}
+.btnWrap .btnDef + .btnDef {margin-left:8px;}
+.btnWrap .btnDef[class*="bg_w"] {background-color:#fff; color:#666;}
+.btnWrap .btnDef[class*="bg_ddd"] {background-color:#ddd; color:#666;}
+.btnWrap .btnDef[class*="bdr_ddd"] {border:1px solid #ddd;}
+
+/* 아이콘 */
+.iconCar {display:block; height:40px; width:40px; background:url('../img/icon_car_40x40.png') no-repeat; background-size:40px;}
+.iconCare {display:block; height:56px; width:56px; background:url('../img/icon_care_56x56.png') no-repeat; background-size:56px;}
+.iconLink {display:block; height:56px; width:56px; background:url('../img/icon_link_56x56.png') no-repeat; background-size:56px;}
+.iconEvpass {display:block; height:56px; width:56px; background:url('../img/icon_evpass_56x56.png') no-repeat; background-size:56px;}
+.iconHome {display:block; height:56px; width:56px; background:url('../img/icon_home_56x56.png') no-repeat; background-size:56px;}
+.iconArrow {display:block; height:12px; width:14px; background:url('../img/icon_arrow.png') no-repeat; background-size:14px 12px;}
+.iconArrow_24 {display:block; height:24px; width:24px; background:url('../img/icon_arrow_24x24.png') no-repeat; background-size:24px 24px;}
+.iconNoti {display:block; height:16px; width:16px; background:url('../img/icon_noti_16x16.png') no-repeat; background-size:16px 16px;}
+.iconCategory {display:block; height:32px; width:32px; background:url('../img/icon_category.png') no-repeat; background-size:32px 32px;}
+.iconhome {display:block; height:32px; width:32px; background:url('../img/icon_home.png') no-repeat; background-size:32px 32px;}
+.iconRes {display:block; height:32px; width:32px; background:url('../img/icon_res.png') no-repeat; background-size:32px 32px;}
+.iconMyMeun {display:block; height:32px; width:32px; background:url('../img/icon_mymenu.png') no-repeat; background-size:32px 32px;}
+
+
+/* GNB */
+.mHeader {padding:0 16px; display:flex; align-items:center; justify-content:space-between; background-color:#f8f8f8;}
+.mHeader .gnbCtrl {position:relative; display:block; height:32px; width:32px; background:url('../img/icon_m_gnb.png') no-repeat; background-size:32px 32px;}
+.mHeader .logoTit .mHdTit {position:relative; display:block; height:50px; width:90px; background:url('../img/m_logo.png') no-repeat; background-size:90px 50px;}
+.mHeader .icMyMenu {position:relative; display:block; height:32px; width:32px; background:url('../img/icon_my.png') no-repeat; background-size:32px;}
+
+/* 탭바 */
+.tabBar {position:fixed; left:0; bottom:0; width:100%; background-color:#fff; z-index:100; display:table; table-layout:fixed; padding-bottom:32px;}
+.tabBar .btn {display:table-cell;}
+.tabBar .btn a {display:flex; flex-direction:column; align-items:center;}
+.tabBar .btn span {font-size:10px; color:#222;}
+
+/* 메인컨텐츠 */
+.mainCotnWrap {margin:0 16px 0; padding-top:50px; position:relative;}
+.mainCotn {padding:32px 16px 24px; background:#FFFFFF; border-radius:14px 14px 10px 10px; position:relative; z-index:1; box-shadow:4px 4px 10px rgba(0, 0, 0, 0.04);}
+.mainCotn .mainTxt {font-size:24px; color:#222; line-height:1.15; letter-spacing:-0.004em; padding-bottom:118px;}
+.jejuOn .mainCotn .mainTxt {background:url('../img/main_jeju.png') no-repeat right bottom; background-size:160px 102px;}
+.inlandOn .mainCotn .mainTxt {background:url('../img/main_inland.png') no-repeat right bottom; background-size:152px 115px;}
+.mainCotn.rentCmplt .mainTxt {background:none; padding-bottom:0;}
+
+.mainCotn .swiperWrap {position:relative; margin-top:24px;}
+.mainCotn .evtSwiper .pageNum {background-color:rgba(0,0,0,0.3); border-radius:30px; left:inherit; right:8px; bottom:8px; width:auto; padding:0 8px;}
+.mainCotn .evtSwiper .pageNum span {color:#fff; font-size:12px; line-height:14px; font-weight:bold; letter-spacing:-0.002em;}
+.mainCotn .mainEvtBnr .evt_bnr img {width:100%;}
+
+/* 예약내역확인 슬라이드 */
+.durDateWrap {display:flex; justify-content:space-between; align-items:center; padding-top:3px;}
+.durDateWrap .durDate {width:43%; position:relative;}
+.durDateWrap .durDate:after {display:block; content:''; height:13px; width:4px; position:absolute; left:23%; top:-3px; background-color:#b4b4b4; border-radius:8px;}
+.durDateWrap .durDate:before {display:block; content:''; height:13px; width:4px; position:absolute; right:23%; top:-3px; background-color:#b4b4b4; border-radius:8px;}
+.durDateWrap .durDate .cntTop {background-color:#eee; border-radius:12px 12px 0 0; padding:7px 0 6px;}
+.durDateWrap .durDate .cntTop p {font-size:12px; text-align:center;}
+.durDateWrap .durDate .cntBtm {padding:16px 0 18px; background-color:#F9F9F9; border-radius:0 0 12px 12px; text-align:center; overflow:hidden;}
+.durDateWrap .durDate .cntBtm .date {font-size:16px; font-weight:bold; line-height:18px; letter-spacing:-0.004em;}
+.durDateWrap .durDate .cntBtm .time {margin-top:4px; font-size:14px;}
+.reseSwiper .pageNum {left:50%; transform:translateX(-50%); bottom:-6px;}
+.reseSwiper .pageNum .swiper-pagination-bullet {width:4px; height:4px; background-color:#ddd; opacity:1;}
+.reseSwiper .pageNum .swiper-pagination-bullet + .swiper-pagination-bullet {margin-left:4px;}
+.reseSwiper .pageNum .swiper-pagination-bullet-active {width:8px; border-radius:10px; background-color:#666;}
+.reseSlide .dlwrap {margin:16px 8px 20px;}
+.dlwrap .dltbl {display:flex; align-items:center; justify-content:space-between;}
+.dlwrap .dltbl + .dltbl {padding-top:11px;}
+.dlwrap .dltbl dt {color:#999; line-height:16px; font-size:14px; margin-right:5px;}
+.dlwrap .dltbl dd {flex:1; text-align:right;}
+.dlwrap .dltbl dd span {color:#444; line-height:16px; font-size:14px;}
+
+/* 링크베너 */
+.dirBnrWrap {margin-top:32px; padding-bottom:32px;}
+.dirBnrWrap .txt_16 {padding-left:16px;}
+.dirBnrWrap .dirBnr {margin-top:8px; padding-left:16px;}
+.dirBnrWrap .bnrCotn {position:relative; width:73%; border:1px solid #EEEEEE; box-sizing:border-box; box-shadow:4px 4px 10px rgba(0, 0, 0, 0.04); border-radius:12px;}
+.dirBnrWrap .bnrCotn img {width:100%;}
+
+/* 채팅상담버튼 */
+.chatWrap {position:fixed; right:16px; top:50%; z-index:10; height:48px; width:48px; background:url(../img/icon_talk_48x48.png) no-repeat; background-size:48px;}
+.chatWrap .img {height:48px; width:48px;}
+
+/* footer */
+.skrFooterRenew {background-color:#F1F1F1; padding:16px 24px 48px; z-index:1;}
+.skrFooterRenew .fooLink ul {display:flex; align-items:center;}
+.skrFooterRenew .fooLink .linkLi {position:relative; flex:1;}
+.skrFooterRenew .fooLink .linkLi i {margin:0 auto;}
+.skrFooterRenew .fooLink .linkLi + .linkLi:after {display:block; content:''; height:36px; width:1px; position:absolute; top:calc(50% - 18px); left:0; background-color:#e6e6e6;}
+.skrFooterRenew .fooLink .linkMenu {display:block; font-size:10px; color:#444; text-align:center; line-height:1.15; letter-spacing:-0.004em;}
+.skrFooterRenew .fooInfoWrap {margin-top:40px;}
+.skrFooterRenew .fooInfoWrap .fooInfo {text-align:center;}
+.skrFooterRenew .fooInfoWrap .fooInfo > * {font-size:16px; color:#444; font-weight:bold; line-height:1.375;}
+.skrFooterRenew .fooInfoWrap .fooInfo a {margin-left:6px;}
+.skrFooterRenew .fooInfoWrap .txtCopy {margin-top:8px; font-size:10px; text-align:center; line-height:1.15;}
+
+/* 탭 */
+.mainTab {position:absolute; left:0; top:0; width:100%;}
+.mainTab .tabWrap {position:absolute; top:0; width:50%;}
+.mainTab .goView {z-index:5;}
+.mainTab .tabInland {right:0;}
+.jejuOn .mainTab .tabJeju {left:0; z-index:3;}
+.inlandOn .mainTab .tabInland { z-index:3;}
+
+.jejuOn .mainTab .tabJeju:after {display:block; content:''; position:absolute; left:0; top:0; width:50px; height:84px; background:url(../img/jeju_tab_on_01.png) no-repeat; background-size:50px 84px;}
+.jejuOn .mainTab .tabJeju:before {display:block; content:''; position:absolute; right:-70px; top:0; width:122px; height:84px; background:url(../img/jeju_tab_on_02.png) no-repeat; background-size:222px 84px;}
+.jejuOn .mainTab .tabInland:after {display:block; content:''; position:absolute; right:0; top:0; width:50px; height:84px; background:url(../img/inland_tab_01.png) no-repeat; background-size:50px 84px;}
+.jejuOn .mainTab .tabInland:before {display:block; content:''; position:absolute; left:-70px; top:0; width:122px; height:84px; background:url(../img/inland_tab_02.png) no-repeat left 100% center; background-size:222px 84px;}
+.inlandOn .mainTab .tabJeju:after {display:block; content:''; position:absolute; left:0; top:0; width:50px; height:84px; background:url(../img/jeju_tab_01.png) no-repeat; background-size:50px 84px;}
+.inlandOn .mainTab .tabJeju:before {display:block; content:''; position:absolute; right:-70px; top:0; width:122px; height:84px; background:url(../img/jeju_tab_02.png) no-repeat; background-size:222px 84px;}
+.inlandOn .mainTab .tabInland:after {display:block; content:''; position:absolute; right:0; top:0; width:50px; height:84px; background:url(../img/inland_tab_on_01.png) no-repeat; background-size:50px 84px;}
+.inlandOn .mainTab .tabInland:before {display:block; content:''; position:absolute; left:-70px; top:0; width:122px; height:84px; background:url(../img/inland_tab_on_02.png) no-repeat left 100% center; background-size:222px 84px;}
+.mainTab p {display:flex; align-items:center; justify-content:center; position:relative; font-size:18px; font-weight:bold; width:100%; height:50px; line-height:50px; color:#222; z-index:1;}
+.mainTab p:after {display:block; content:''; height:100%; position:absolute;  top:0; z-index:-1;}
+.jejuOn .mainTab .tabJeju p:after {background-color:#fff; left:50px; width:calc(100% - 100px);}
+.jejuOn .mainTab .tabInland p:after {background-color:#6C6259; right:48px; width:calc(100% - 100px)}
+.inlandOn .mainTab .tabJeju p:after {background-color:#8F7761; right:50px; width:calc(100% - 100px);}
+.inlandOn .mainTab .tabInland p:after {background-color:#fff; left:48px; width:calc(100% - 95px)}
+
+.jejuOn .mainTab .tabInland p {color:rgba(255,255,255,0.7);}
+.inlandOn .mainTab .tabJeju p {color:rgba(255,255,255,0.7);}
+
+.mainTab .count {display:inline-block; font-size:10px; height:16px; width:16px; border-radius:50%; text-align:center; line-height:16px; font-weight:bold; background-color:#FF7A00; color:#fff; margin-left:4px;}
+.jejuOn .mainTab .tabInland .count,
+.inlandOn .mainTab .tabJeju .count {background-color:#fff; color:#444;}
+
+
+
+/* ------------------------------------------------------------ [ 바닥팝업 ] ------------------------------------------------------------ */
+
+/* setting */
+body.dimRenew {overflow:hidden;}
+body.dimRenew:before {background-color:rgba(0, 0, 0, 0.7); content:''; position:fixed; left:0; top:0; height:100vh; width:100%; z-index:1000;}
+
+.btmPopup {position:fixed; left:0; right:0; bottom:-100%; margin:0 auto; height:calc(100vh - 76px); width:100%; z-index:1100;}
+.btmPopup {transition:bottom 0.4s ease-in-out;}
+.btmPopup.on {bottom:0;}
+.btmInnerWrap {position:relative; height:calc(100% - 116px);}
+.btmInner {position:absolute; width:100%; bottom:-100%; border-radius:24px 24px 0 0 ; box-shadow:0px -4px 16px 6px rgba(191, 191, 191, 0.05);  transition:0.4s ease-in-out;}
+
+/* 바닥팝업 헤더 */
+.btmPopup .btmHead {display:flex; align-items:center; justify-content:space-between;  position:relative; padding:34px 24px 0;}
+.btmPopup .btmHead .btmTit {font-size:18px; color:#222;}
+.btmPopup .btmHead .btmTime {font-size:14px; color:#222; line-height:1.33; font-weight:bold;}
+.btmPopup .btmHead .sbTit {display:none;}
+
+/* 바닥팝업 푸터 */
+.btmPopup .btmFoot {background-color:#fff; padding:16px 24px 44px; position:absolute; left:0; bottom:0; width:100%; z-index:1200;}
+.btmPopup .btmFoot .btnWrap {margin-top:0;}
+.btmPopup .btmFoot .btnWrap .btnDef {height:56px; line-height:56px;}
+
+
+/* 바닥팝업 비활성화 */
+.btmPopup .btmInert .btmHead {padding:19px 24px 0;}
+.btmPopup .btmInert .btmHead .btmTit {font-size:16px; color:#ccc; line-height:1.33;}
+.btmPopup .btmInert .btmHead .sbTit {display:block; font-size:14px; font-weight:bold; color:#fff; line-height:1.42; letter-spacing:-0.004em;}
+.btmPopup .btmInert .btmHead .sbTit span {display:inline-block;}
+.btmPopup .btmInert .btmHead .sbTit span + span {padding-left:17px; position:relative;}
+.btmPopup .btmInert .btmHead .sbTit span + span::after {display:block; content:''; width:1px; height:8px; position:absolute; left:8px; top:5px; background-color:#fff;}
+.btmPopup .btmInert .btmContents {display:none;}
+
+/* 대여기간 팝업 */
+.btmInner.btmPeriodWrap {bottom:0; height:100%; background-color:#686262; z-index:1110;}
+.btmInner.btmimeWrap {bottom:0}
+
+/* 대여지점 팝업 */
+.btmStoreWrap {height:calc(100% - 56px); z-index:1120; background-color:#898282;}
+.btmStoreWrap .btmContents {height:calc(100% - 74px);}
+.btmStoreWrap.open,
+.btmStoreWrap.btmInert {bottom:0;}/* open이거나 비활성화일경우 */
+
+/* 차량선택 팝업 */
+.btmCarWrap.open {bottom:0;}
+.btmCarWrap {height:calc(100% - 114px); z-index:1130;}
+
+/* 바닥팝업헤더 영역 */
+.btmInner .btmInnerOpen {display:block;}
+.btmInner.open .btmInnerOpen {display:none;}
+
+/* 제주:바닥팝업 */
+.btmPopupJeju .btmStoreWrap {height:100%; z-index:1110; background-color:#686262;}
+.btmPopupJeju .btmInner.btmPeriodWrap {height:calc(100% - 56px); z-index:1120; background-color:#898282;}
+.btmPopupJeju .btmInner.btmPeriodWrap.open {height:100%;}
+
+/* 팝업열림 */
+.btmPopupJeju .btmInner.open,
+.btmInner.open {background-color:#fff;}
+
+
+/* 안내문구 */
+.notiWrap {display:flex; margin-top:16px; padding:0 24px;}
+.notiWrap .notiTxt {font-size:12px; color:#888; margin-left:8px; flex:1; height:32px;}
+
+/* 차종선택탭 */
+.tab_menu_bg {margin-top:24px; padding-left:24px; overflow-y:auto; padding-bottom:8px;}
+.tab_menu_bg ul {display:flex; box-sizing:border-box;}
+.tab_menu_bg ul li {flex:none; position:relative;}
+.tab_menu_bg ul li + li {margin-left:8px;}
+.tab_menu_bg .tabBtn {display:inline-block; height:36px; padding:9px 14px; color:#666; background-color:#f6f6f6; border:2px solid #f6f6f6; border-radius:12px; line-height:16px; font-weight:bold; cursor:pointer;}
+.tab_menu_bg input:checked ~ .tabBtn {background-color:#ff7a00; border:2px solid #ff7a00; color:#fff;}
+.tab_menu_bg ul li.all .tabBtn {border:2px solid #ddd; background-color:#fff; color:#222;}
+.tab_menu_bg ul li.all input:checked ~ .tabBtn {border:2px solid #ff7a00;}
+
+/* 차량선택탭 */
+.carLiWrap {margin-top:24px; padding:0 24px; overflow-x:hidden; overflow-y:auto; max-height:calc(75vh - 238px); min-height:358px;}
+.carLiWrap ul li {margin-bottom:8px;}
+.carLiWrap .rentWrap {display:flex; align-items:center; justify-content:space-between; padding:0 16px; position:relative; background-color:#fff; height:64px; width:100%; border:1px solid #e5e5e5; border-radius:4px;}
+.carLiWrap .rentInfo {flex:1;}
+.carLiWrap .rentName {font-weight:normal; margin-right:8px; color:#222; font-size:16px; line-height:22px;}
+.carLiWrap .rentFuel {display:inline-block; color:#aaa; line-height:22px; font-weight:bold; font-size:12px; vertical-align:middle;}
+.carLiWrap .resCmplt {margin-left:5px; color:#aaa; font-size:12px; line-height:14px; font-weight:bold;}
+.carLiWrap input:checked ~ .rentWrap {border:2px solid #ff7a00; background-color:#FFF7F0;}
+.carLiWrap input:checked ~ .rentWrap .rentName {font-weight:bold;}
+.carLiWrap input:disabled ~ .rentWrap {border:2px solid #F6F6F6; background-color:#F6F6F6;}
+.carLiWrap input:disabled ~ .rentWrap .rentName {color:#aaa;}
+
+/* 시간선택 */
+.btmPopup.selTime01 {height:350px}
+.btmPopup.selTime02 {height:405px}
+
+.selectTimeWrap {padding:32px 0 12px;}
+.selectTimeWrap .selectTime {display:none;}
+.selectTimeWrap .dwwc,
+.selectTimeWrap .dwsc .dww,
+.selectTimeWrap .dwsc .dwwl {background:#fff; padding:0; margin:0;}
+.selectTimeWrap .dwwo,
+.selectTimeWrap .dwwol {display:none;}
+.selectTimeWrap .dwc,
+.selectTimeWrap .dwwr {padding:0;}
+.selectTimeWrap .dwsc .dww {min-width:38px !important;}
+.selectTimeWrap .dwi {position:relative; left:50%; transform:translateX(-50%);}
+.selectTimeWrap .dw-li {padding:0; color:#eee; font-size:32px; font-weight:bold; line-height:37px; text-shadow:none;}
+.selectTimeWrap .dw-li.dw-sel {color:#222;}
+.selectTimeWrap .dwsc .dwwl.dwwl0 .dw-li .dw-i {font-size:18px;}
+.selectTimeWrap .dwsc .dwwl.dwwl1 {margin-left:60px; padding-right:15px;}
+.selectTimeWrap .dwsc .dwwl.dwwl2 {padding-left:25px;}
+.selectTimeWrap .dwsc .dwwl.dwwl2:after {display:block; content:':'; position:absolute; left:0; top:50%; transform:translateY(-50%); color:#222; font-size:32px;}
+.btmPopup .selectTimeList {position:relative;}
+.btmPopup .off .btmHead {margin:0 24px; padding:34px 0 16px 0; border-bottom:1px solid #eee;}
+.btmPopup .off .btmHead .btmTit,
+.btmPopup .off .btmHead .btmTime {color:#888;}
+.btmPopup .selectTime02 .btmHead {padding-top:18px;}
+.btmPopup .selectTime01 .selStartTimeOpen {display:none;}
+.btmPopup .selectTime01.off .selStartTimeOpen {display:block;}
+.btmPopup .selectTime02 {height:230px; transition:height 0.4s;}
+.btmPopup .selectTime01 .btmContents {transition:height 0.4s;}
+.btmPopup .selectTime01.off .btmContents,
+.btmPopup .selectTime02.off {height:0; overflow:hidden;}
+.btmPopup .selectTime01 .btmContents {height:172px;}
+
+/* 지점선택 */
+.storeWrap {padding-top:16px; height:calc(100% - 32px);}
+.storeList {position:relative; height:100%;}
+.storeList .selectArea {padding-top:16px; height:100%;}
+.storeList .selectArea .araeLi > a {display:block; padding:10px 24px; font-size:16px; color:#222;}
+.storeList .selectArea .araeLi.on > a {color:#ff7a00; font-weight:bold;}
+
+.storeList .selectArea .selectBranchWrap {display:none; padding:24px 0; position:absolute; right:0; top:0; width:58%; height:100%; background-color:#f6f6f6; overflow-y:auto;}
+.storeList .selectArea .on .selectBranchWrap {display:block;}
+.storeList .selectBranchWrap li a {display:block; padding:10px 12px 10px 24px; color:#222; font-size:16px;}
+.storeList .selectBranchWrap li.on a {color:#ff7a00; font-weight:bold;}
+.storeList .selectBranchWrap li.resCmplt {padding-right:12px;}
+.storeList .selectBranchWrap li.resCmplt a {display:flex; align-items:center; justify-content:space-between; color:#aaa;}
+.storeList .selectBranchWrap li.resCmplt span {color:#aaa; font-weight:bold; font-size:12px;}
+
+/* 대여기간선택 */
+.selPeriod .btmFoot {background-color:#f8f8f8;}
+.btmPeriodWrap .btmContents {height:calc(100% - 58px);}
+.calendar {height:calc(100% - 180px); background-color:rgb(148, 148, 148); font-size:30px; text-align:center; box-sizing:border-box; padding-top:200px;}
+
+.calendarData {position:absolute; left:0; bottom:0; width:100%; background-color: #F8F8F8;}
+.periodAreaWrap {display:flex; align-items:center; justify-content:space-between; padding:24px 24px 0;}
+.periodAreaWrap .periodArea {position:relative; width:calc(50% - 23px);}
+.periodAreaWrap .periodArea + .periodArea:after {display:block; content:''; width:1px; height:116px; background-color:#eee; position:absolute; left:-24px; top:0;}
+.periodAreaWrap .periodArea .periodTit {color:#888; font-size:16px; line-height:22px;}
+.periodAreaWrap .periodArea .datePeriod {margin-top:8px; font-weight:bold; color:#222; font-size:18px; line-height:22px;}
+.periodAreaWrap .periodArea .selTimeBtn {margin-top:16px; width:100%; height:48px; display:flex; align-items:center; justify-content:space-between; position:relative; background-color:#fff; border:1px solid #ddd; border-radius:4px; padding:12px 8px; box-sizing:border-box;}
+.periodAreaWrap .periodArea .selTimeBtn span {color:#222; font-size:18px; line-height:24px;}
+.calendarData .notiWrap {margin-bottom:8px;}
+.calendarData .notiWrap .notiTxt {height:auto;}
+
+
+/* 달력 */
+.ui-datepicker-title {font-size:16px; line-height:20px; color:#000; padding:32px 0 24px 0;}

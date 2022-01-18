@@ -1,0 +1,12 @@
+.comment{width: 1000px;}
+.comment p.comment_num{padding: 5px 0 5px 55px; border-top: 1px #eb444b solid; border-bottom: 1px #eb444b solid;}
+.comment .list{margin-bottom: 50px;}
+.comment .list dl{border-bottom: 1px solid #ddd}
+.comment .list dl dt{position: relative; top: 1px; display: inline-block; width: 150px; text-align: center; padding: 10px 0; vertical-align: top;}
+.comment .list dl dt a{position: absolute; top: 8px; right: -835px;}
+.comment .list dl dd{display: inline-block; width: 735px; padding: 10px 0 10px 10px;}
+.comment .list form{position: relative; overflow: hidden;width: 1000px; height: 90px; margin: 10px 0;}
+.comment .list p.text_area{width: 900px;}
+.comment .list p.text_area textarea{height:90px; padding:10px; box-sizing: border-box;}
+.comment .list form a{position: absolute; top: 0; right: 0px; width: 90px; height: 90px; line-height: 90px; text-align: center; color: #fff; background-color: #eb444b;}
+ 

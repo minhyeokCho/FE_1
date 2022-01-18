@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.link-box{border-top:1px solid #ddd !important;border-color: transparent;margin: 15px 0 0 0;}
+.link-box.nl{border-top: 0 !important;margin: 0 !important;}
+.m-usebox{background-color: #f8f8f8;padding: 20px 15px 17px 15px;margin: 0 -14px;padding-bottom: 60px !important;margin-bottom: -60px !important;}
+.m-usebox div:first-child{margin-bottom: 18px}
+.m-use-head{position: relative;text-indent: 30px;color: #333;font-size: 13px;letter-spacing: -0.325px;line-height: 13px;margin-bottom: 17px;}
+.m-use-head:before{   
+	content: "";
+	position:absolute;
+	width: 21px;
+	height: 21px;
+	background-size: 100%;
+	background-image: url(/resources/mobile/img/common/icon-info.png);
+	background-repeat: no-repeat;
+	left: 0;
+	top:-4px;
+	}
+.m-use-under{padding-bottom: 7px;line-height: 13px;font-size: 13px;display: block;font-family: "NanumBarunGothicLight";}
+.m-use-span{font-size: 13px;line-height: 18px;color: #666;letter-spacing: -0.325px;display: inline-block;font-family: "NanumBarunGothicLight";}
+.under-bar-one{border-bottom:1px solid #777;margin-bottom:1px;}

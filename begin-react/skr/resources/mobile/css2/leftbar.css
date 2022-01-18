@@ -1,0 +1,112 @@
+@CHARSET "EUC-KR";
+
+/* 占쏙옙占쏙옙占� 占쏙옙占쏙옙 占쏙옙占쏙옙占싱듸옙 占쌨댐옙 占싹댐옙 */
+.bottom-hotlink-new{display: table;width: 100%;background: #f5f5f5;margin: 0 auto;padding: 20px 0;}
+.bottom-hotlink-new ul li{float:left;width:45%;text-align:center;line-height: 30px;height: 30px;}
+/*.bottom-hotlink-new ul li:first-child{line-height: 15px} */
+.bottom-hotlink-new ul li a{font-size: 11px;font-weight: normal;color: #666;text-align: center;}		
+
+
+/* 占쏙옙占쏙옙 占쏙옙占쏙옙歐占� 占싯억옙 */
+header .counsel-select .sel ul li{float: none; width: auto;}
+.under_small{display: block;font-size: 12px;color: #666;}
+
+/* 占쏙옙占쏙옙占쏙옙占싱뤄옙트 占쌩곤옙 */
+header .nav-lnb .bottom-counsel a{width: 33.3%;}
+
+/* 20210520 占쏙옙占쏙옙占쏙옙占싱뤄옙트 
+header .nav-lnb .bottom-counsel {
+	display: block;
+}
+header .nav-lnb .bottom-counsel::after {
+	content:'';
+	display: block;
+	clear:both;
+}
+header .nav-lnb .bottom-counsel a {
+	display: inline-block;
+	width: 50%;
+	height: 60px;
+	box-sizing: border-box;
+	float: left;
+	border-bottom:1px solid #f5f5f5;
+	padding:0; 
+}
+header .nav-lnb .bottom-counsel .link1 {
+	display: block;
+    text-align: left;
+    padding-left: 50px;
+    line-height: 1.6em;
+}
+header .nav-lnb .bottom-counsel .link1:before {
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	left:12px;
+}
+header .nav-lnb .bottom-counsel .link2 {
+	display: block;
+    text-align: left;
+    padding-left: 50px;
+}
+header .nav-lnb .bottom-counsel .link2:before {
+	display: inline-block;
+	position: absolute;
+	top: -6px;
+	left:12px;
+}
+ */
+ 
+ header .nav-lnb .bottom-counsel .link3 {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+}
+header .nav-lnb .bottom-counsel .link3:before {
+    content: "";
+    display: block;
+    width: 83px;
+    height: 20px;
+    background: url(/resources/mobile/img/common/img_navi_ezy.png) no-repeat center;
+    -webkit-background-size: 22px;
+    background-size: 83px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 12px;
+}
+
+/* 20210616 �ㅻ��몄��� */
+header .nav-lnb .bottom-counsel .link4 {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+}
+header .nav-lnb .bottom-counsel .link4:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 14px;
+    background: url(/resources/mobile/img/common/icon_nav_smart.png) no-repeat center;
+    -webkit-background-size: 32px 14px;
+    background-size: 32px 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+header .nav-lnb .bottom-counsel a {
+    vertical-align: middle;
+    padding: 5px 0;
+}
+header .nav-lnb .bottom-counsel.two a {
+    padding: 11px 0;
+}

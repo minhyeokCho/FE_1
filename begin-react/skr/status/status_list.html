@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="status.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+	<script type="text/javascript" src="../resources/mobile/js/jquery-1.11.2.min.js"></script>
+	<title>SK렌터카 STATUS 목록만</title>
+</head>
+
+<body>
+<h1>SK렌터카 STATUS</h1>
+<div class="note">
+	<ul>
+		<li><strong>업데이트 관리자:</strong> <span>조민혁</span></li>
+		<li>
+			<p>용어정리</p>
+			<dl>
+				<!-- <dt>알럿</dt>
+				<dd>시스템알럿 대신 띄우는 팝업</dd>
+				<dt>전체팝업</dt>
+				<dd>디바이스 전체를 덮어쓰는 팝업</dd> -->
+				<dt>바닥팝업</dt>
+				<dd>화면 아래에서 올라오는 팝업</dd>
+			</dl>
+		</li>
+		<li>status의 팝업 목록은 팝업을 띄웠을 때의 화면 입니다.<br>팝업 영역은 메뉴별 html 안에 존재 합니다.</li>
+		<!-- <li>[공통] 팝업은 html 페이지 내에 존재하지 않습니다.</li> -->
+		<li class="page">
+			전체페이지: <em class="total"></em> /
+			완료페이지: <em class="end"></em> /
+			진행률: <em class="progress"></em>%
+		</li>
+	</ul>
+</div>
+<nav class="site_nav">
+	<ul>
+		<li class="all on"><a href="#none">메뉴전체보기</a></li>
+		<li class=""><a href="#none">모바일</a></li>
+		<li class=""><a href="#none">PC</a></li>
+		<li class=""><a href="guide.html" target="_blank">레이아웃가이드:새창</a></li>
+	</ul>
+</nav>
+
+<div class="menu_wrap all">
+	<!-- 모바일 -->
+	<section class="menu_list">
+		<table>
+			<thead>
+				<tr class="menu_section">
+					<th colspan="9">
+						<h1>모바일</h1>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH or TAB</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">NAME</th>
+					<th scope="col">COMPLETE</th>
+					<th scope="col">COMMENT</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu05 ing">
+					<td class="depth01">제주</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><p class="link">/mo/jeju/main</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>[공통] 일정선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selPeriod</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 ing">
+					<td class="depth01"></td>
+					<td>[공통] 시간선택</td>
+					<td>대여시각</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selTime01</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 ing">
+					<td class="depth01"></td>
+					<td></td>
+					<td>반납시각</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selTime02</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 ing">
+					<td class="depth01"></td>
+					<td>차량선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/jeju/sel_car</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 ing">
+					<td class="depth01"></td>
+					<td>예약확인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><p class="link">/mo/jeju/rent_cmplt</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01">내륙</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><p class="link">/mo/inland/main</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>[공통] 일정선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selPeriod</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>[공통] 시간선택</td>
+					<td>대여시각</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selTime01</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td></td>
+					<td>반납시각</td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/common/selTime02</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05 ing">
+					<td class="depth01"></td>
+					<td>지점선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/inland/sel_store</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>차량선택</td>
+					<td></td>
+					<td></td>
+					<td class="center">바닥팝업</td>
+					<td><p class="link">/mo/inland/sel_car</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>예약확인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td><p class="link">/mo/inland/rent_cmplt</p></td>
+					<td class="center name"></td>
+					<td class="center end"></td>
+					<td class="comment">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<!--// 모바일 -->
+</div>
+
+<script>
+	$(document).ready(function() {
+		// html파일열기
+		$('.link').on('click', function() {
+			//console.log('e');
+			var tg = '/project/skdirect_html/html' + $(this).text() + '.html';
+			if (tg == '') {} else {
+				// window.location.href = 'http://pub.wyliedev.co.kr/megamart/pc/'+tg
+				window.open(tg, 'view');
+			}
+			//console.log(tg);
+		});
+
+		// 진척률
+		var ignore = $("tbody .ignore").length,
+			total = $("tbody tr").length - ignore,
+			complt = $("tbody tr.end").length,
+			progress = Math.floor(100*complt)/total;
+
+		$(".note .total").text(total);
+		$(".note .end").text(complt);
+		$(".note .progress").text(progress);
+
+		// 메뉴별목록 보여주기
+		$('.site_nav li').on('click', function() {
+			var tab_id = $(this).index();
+
+			$(this).addClass("on");
+			$(this).siblings().removeClass("on");
+
+			// console.log();
+			$(".menu_wrap").removeClass("all");
+			$(".menu_wrap .menu_list").eq(tab_id - 1).addClass("on").siblings(".menu_list").removeClass("on");
+			if($(this).hasClass("all")){
+				$(".menu_wrap").addClass("all");
+				$(".menu_list").removeClass("on");
+			}
+		});
+	});
+</script>
+
+<!-- status list 템플릿 -->
+<section class="menu_list" style="display:none;">
+	<table>
+		<thead>
+			<tr class="menu_section">
+				<th colspan="9">
+					<h1>status list 템플릿</h1>
+				</th>
+			</tr>
+			<tr>
+				<th scope="col">1DEPTH</th>
+				<th scope="col">2DEPTH</th>
+				<th scope="col">3DEPTH</th>
+				<th scope="col">4DEPTH or TAB</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">LINK</th>
+				<th scope="col">NAME</th>
+				<th scope="col">COMPLETE</th>
+				<th scope="col">COMMENT</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="menu05">
+				<td class="depth01">메인</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="center"></td>
+				<td><p class="link">/customer/main</p></td>
+				<td class="center name"></td>
+				<td class="center end"></td>
+				<td class="comment">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<!--// status list 템플릿 -->
+</body>
+</html>

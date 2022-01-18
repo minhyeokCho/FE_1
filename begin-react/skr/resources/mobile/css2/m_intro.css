@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+/* 200311 */
+.intro_event_box{position: relative;}
+.intro_event_box > span{display: block; color: #fff ;margin: 16% 0 0 10%;}
+
+/* 200602 */
+/*.aj-modal-ori-pop .modal-box{padding: 25px!important;}
+.login_popbox{position: relative; top: 25px; left: 46px; float: left; padding: 0;}
+.login_popbox:after{position: absolute; top: -32px; content:""; width: 62px; height: 65px;
+	background-image: url(/resources/mobile/img/common.png); background-repeat: no-repeat; background-size: 375px 524px; overflow: hidden; white-space: nowrap;}
+.aj_members {position:absolute; top: 62px; left: 85px;}
+.non_members {position:absolute; top: 62px; left: 221px;}
+.aj_members:after{background-position: -68px -318px;}
+.non_members:after{background-position: -138px -318px;}
+.login_txt{display: block; margin-top: 45px; font-size: 13px; text-align: center; color: #333!important;}
+.aj_members_txt{margin-left: -5px;}
+.non_members_txt{margin-left: 13px;}*/
+
+.counsel-select {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 233px;
+    padding: 0 15px;
+    margin: auto;
+    z-index: 10001;
+    display: none;
+}
+.aj-modal-ori-pop .tit {
+    height: 40px;
+    font-size: 15px;
+    color: #333;
+    padding-left: 15px;
+    line-height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.login_popbox{position: relative;}
+/*.login_popbox:after{position: absolute; top: 26px; left: 64px; content:""; width: 62px; height: 65px;
+	background-image: url(/resources/mobile/img/common.png); background-repeat: no-repeat; background-size: 375px 524px; overflow: hidden; white-space: nowrap;}
+.aj_members:after{background-position: -68px -318px;}
+.non_members:after{background-position: -138px -318px;}*/
+.aj-modal-ori-pop .modal-box{padding: 0; overflow: hidden;}
+.login_txt{display: block; font-size: 13px; text-align: center; color: #333!important;}
+.aj-modal-ori-pop .sel ul li {
+    float: left;
+    width: 50%;
+    height: 148px;
+    text-align: center;
+    padding: 26px 0;
+}
+.aj-modal-ori-pop .sel ul .img_icon_box{width: 55px; height: 55px; display: inline-block; text-align: center; vertical-align: middle;}
+.aj-modal-ori-pop .sel ul .img_icon_box img{max-width: 100%;}
+.under_small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+.aj-modal-ori-pop .close {
+    height: 45px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    background: #eb444b;
+    cursor: pointer;
+}
+.wrap-btn{margin-top: 0;}
+
+/* 20210520 �씠吏��떎�씠�젆�듃  */
+.wrap-link-content>div.ezy_main a {
+	/* background-color: rgba(234,119,22,0.9); */
+    border: 5px solid #f68c36;
+	padding: 3.1vw;
+}
+/* .wrap-link-content .ezy_main .title-type1 {
+	color: #fff;
+}
+.wrap-link-content .ezy_main .title-type1:after {
+	background-color: #f2ad73;
+}
+.wrap-link-content .ezy_main .title-type2 img {
+	height: 18px;
+}
+.wrap-link-content .ezy_main .txt-sum {
+	color:#fff;
+}
+.wrap-link-content .ezy_main .description {
+	color: #ffd6b3;
+}
+.ezy_main .m-event-box {
+	background-color: #fff7f0;
+}
+.ezy_main .m-event-box span {
+ 	color: #ea7716;
+ }
+ .wrap-link-content .ezy_main .txt-sum:after {
+ 	background: url(/resources/mobile/img/common/bg_link_arrow2.png) no-repeat;
+ 	background-size: 20px 8px;
+ } */
+ .wrap-link-content .txt-sum:after {
+ 	background: url(/resources/mobile/img/common/bg_link_arrow1.png) no-repeat;
+ 	background-size: 20px 8px;
+ }
+ .wrap-link-content>div.ezy_main a.link-newcar {
+    background-image: url(/resources/mobile/img/common/bg_main_ezy.png);
+    background-position: 26vw 37vw;
+}
+.wrap-link-content .ezy_main .txt-sum {
+    bottom: 3vw;
+}
+
+
+/* SK렌터카 모바일 리뉴얼 메뉴 */
+
+.mainMobMenuWrap {
+    padding: 0 20px;
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.mainMobMenuWrap .mainMenuList {
+    position: relative;
+    height: 56.7vw;
+    flex: 1 1 40%;
+    padding: 0 3.1vw;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0.9);
+}
+
+.mainMobMenuWrap .mainMenuList:first-child {
+    border: 3px solid #f68c36;
+}
+
+.mainMobMenuWrap .mainMenuList:nth-child(-n+2) {
+    margin-bottom: 9.5px;
+}
+
+.mainMobMenuWrap .mainMenuList:nth-child(1),
+.mainMobMenuWrap .mainMenuList:nth-child(3) {
+    margin-right: 8.5px;
+}
+
+.mainMobMenuWrap .mainMenuList .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainMobMenuWrap .mainMenuList.direct .item:first-child {
+    margin-top: 26px;
+}
+
+.mainMobMenuWrap .mainMenuList.jeju .item:first-child {
+    margin-top: 29px;
+}
+
+.mainMobMenuWrap .mainMenuList.inland .item:first-child {
+    margin-top: 26px;
+}
+
+.mainMobMenuWrap .mainMenuList.consult .item:first-child {
+    margin-top: 26px;
+}
+
+.mainMobMenuWrap .mainMenuList.direct .item:first-child > img {
+    width: 42.5px;
+    height: 36.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.jeju .item:first-child > img {
+    width: 36.5px;
+    height: 36.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.inland .item:first-child > img {
+    width: 37.5px;
+    height: 37.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.consult .item:first-child > img {
+    width: 38px;
+    height: 38.5px;
+}
+
+.mainMobMenuWrap .mainMenuList .item:nth-child(2) > h3 {
+    color: #333;
+    letter-spacing: -0.44px;
+    padding: 17px 0 11px;
+}
+
+.mainMobMenuWrap .mainMenuList.jeju .item:nth-child(2) > h3 {
+    padding: 17px 0 10px;
+}
+
+/* .mainMobMenuWrap .mainMenuList.consult .item:nth-child(2) > h3 {
+    padding: 15px 0 10px;
+} */
+
+.mainMobMenuWrap .mainMenuList .item:nth-child(2) > img {
+    width: 86.5px;
+}
+
+.mainMobMenuWrap .mainMenuList .item:nth-child(2) > p {
+    color: #6d6d6d;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.mainMobMenuWrap .mainMenuList.jeju .item:nth-child(2) > p {
+    padding-top: 0px;
+}
+
+.mainMobMenuWrap .mainMenuList .item > strong {
+    color: #f68c36;
+    font-size: 12.75px;
+    letter-spacing: -0.32px;
+}
+
+.mainMobMenuWrap .mainMenuList .item .directBtn,
+.mainMobMenuWrap .mainMenuList .item .consultBtn {
+	position: absolute;
+    bottom: 10px;
+    width: 90%;
+    color: #fff;
+    font-size: 11.75px;
+    padding: 10.5px 10px;
+    background-color: #f68121;
+}
+.mainMobMenuWrap .mainMenuList .item .consultBtn {
+    bottom:12px;
+}
+.mainMobMenuWrap .mainMenuList .item.master .consultBtn {
+    padding:6.5px 8.5px 4.5px;
+}
+.mainMobMenuWrap .mainMenuList .item.master .consultBtn:first-child {
+    bottom:42px;
+}
+.mainMobMenuWrap .mainMenuList .item.master .consultBtn:last-child {
+    bottom:12px;
+}
+.mainMobMenuWrap .mainMenuList .item .directBtn::after,
+.mainMobMenuWrap .mainMenuList .item .consultBtn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -8px;
+    width: 5px;
+    height: 12px;
+    background-image: url("/resources/mobile/img/common.png");
+    background-repeat: no-repeat;
+    background-position: -70px -83px;
+    -webkit-background-size: 320px 500px;
+    background-size: 320px 500px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns {
+    position: absolute;
+    bottom: 12px;
+    left: 8px;
+    width: 90%;
+    display: -webkit-box;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns > div {
+    position: relative;
+    width: 49%;
+    font-size: 11.75px;
+    padding: 8.5px;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns > div::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    width: 5px;
+    height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns .reservBtn  {
+    color: #fff;
+    border: 1px solid #f68121;
+    background-color: #f68121;
+    margin-right: 2.5px;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns .confirmBtn {
+    color: #454545;
+    border: 1px solid #f68121;
+    background-color: #fff;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns > div.reservBtn::after {
+    right: 4px;
+    background-image: url("/resources/mobile/img/common.png");
+    background-repeat: no-repeat;
+    background-position: -70px -83px;
+    -webkit-background-size: 320px 500px;
+    background-size: 320px 500px;
+}
+
+.mainMobMenuWrap .mainMenuList .item.btns > div.confirmBtn::after {
+    right: 4px;
+    background-image: url("/resources/mobile/img/common.png");
+    background-repeat: no-repeat;
+    background-position: -46px -139px;
+    -webkit-background-size: 316px 500px;
+    background-size: 316px 500px;
+}
+/*
+.mainMobMenuWrap .mainMenuList.consult .item:nth-child(3) > div {
+    padding: 5.5px 8.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.consult .item:nth-child(3) > div:nth-child(1) {
+    bottom: 67.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.consult .item:nth-child(3) > div:nth-child(2) {
+    bottom: 39.5px;
+}
+
+.mainMobMenuWrap .mainMenuList.consult .item:nth-child(3) > div:nth-child(3) {
+    bottom: 12px;
+}
+*/

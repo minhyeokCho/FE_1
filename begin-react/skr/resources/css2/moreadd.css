@@ -1,0 +1,49 @@
+@CHARSET "EUC-KR";
+
+.p_point{font-size: 13px;color:#666;margin-top: 10px;line-height: 13px;}
+.ticker-info .ticker-head .ticker-btn{font-size: 14px;color: #fff;text-align: center;line-height: 94px;text-indent: unset;}
+.ticker-info .ticker-head .ticker-btn span{display: block; text-indent: 0;}
+.ticker-info .ticker-head .ticker-btn:before{background-position: -1333px -1082px;width: 15px;height: 10px;top: 30px;}
+
+.ticker-info.selected .ticker-head .ticker-btn:before{background-position: -1330px -1235px;width: 15px;height: 10px;top: 30px;}
+
+
+.through_line_span{opacity:0.7;font-size:15px;margin-left: 5px;}
+.through_line{text-decoration: line-through;}
+
+.event_apply {display: inline-block;font-size: 15px;color: #fff;background: #333;border-radius: 12px;padding: 2px 9px;line-height: 18px;margin: 0 5px;}
+.event-arrow {position:relative; top:-4px; padding-right: 10px;margin-right: 13px;}
+.event-arrow:after {content:''; position:absolute; left:71px; right:0; height:1px;  background:#fff;top:8px; }
+.event-arrow:before {content:''; position:absolute; top:4px; right:-8px;border-top: 4px solid transparent;border-right: 4px solid transparent;border-bottom: 4px solid transparent;border-left: 4px solid #fff;}
+
+.mt0{margin-top: 0 !important;}
+
+
+/* corp_shorRent */
+.corp_shortRent_info dl {
+	display: table;
+	width: 100%;
+	height: 98px;
+	box-sizing: border-box;
+	background: #fdfcf8;
+	padding: 0 50px;
+	border: 1px solid #f68121;	
+	margin-bottom:35px;
+}
+.corp_shortRent_info dl > * {
+	display:table-cell;
+	vertical-align: middle;
+}
+.corp_shortRent_info dl dt {
+	font-size: 28px;
+	color: #333;
+}
+.corp_shortRent_info dl dd {
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+/* 20210618 결제페이지 문구 추가*/
+.ticker-info.long .ticker-head .ticker-btn {
+	line-height: 105px;
+}

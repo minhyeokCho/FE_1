@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="imagetoolbar" content="no">
+		<meta name="title" content="site title">
+		<meta name="keywords" content="site keyword">
+		<meta name="subject" content="site subject">
+		<meta name="description" content="site description">
+		<meta name="author" content="site author">
+		<meta name="copyright" content="site copyright">
+		<meta name="writer" content="site writer">
+		<meta name="language" content="ko">
+
+		<!--  SNS  -->
+		<meta property="og:title" content="SK렌터카">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://m.skcarrental.com/resources/img/logo_sns.jpg">
+		<meta property="og:url" content="https://m.skcarrental.com">
+		<meta property="og:description" content="여기를 눌러 링크를 확인하세요.">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="SK렌터카">
+		<meta name="twitter:url" content="https://m.skcarrental.com">
+		<meta name="twitter:image" content="https://m.skcarrental.com/resources/img/logo_sns.jp">
+		<meta name="twitter:description" content="여기를 눌러 링크를 확인하세요.">
+		<!--  SNS//end -->
+		<title>SK렌터카 | 기간선택</title>
+		<!-- favicon  -->
+		<!-- <link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+		<link rel="icon" href="/resources/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png"> -->
+
+		<!-- 다이렉트개편 : swiper plugin 추가 - swiper.min.css는 꼭 style.css 위쪽에 오도록 해주세요. -->
+		<link rel="stylesheet" href="../../../resources/mobile/css/swiper.min.css">
+
+		<!-- favicon//end -->
+		<link rel="stylesheet" href="../../../resources/mobile/css/font.css" media="screen">
+		<link rel="stylesheet" href="../../../resources/mobile/css/style.css" media="screen">
+		<link rel="stylesheet" href="../../../resources/mobile/css/style2.css" media="screen">
+		<!-- 모바일 댓글 기능 추가 -->
+		<link rel="stylesheet" href="../../../resources/mobile/css2/comment.css" media="screen">
+
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<script type="text/javascript" src="../../../resources/mobile/js/jquery-1.11.2.min.js"></script>
+		<script src="../../../resources/mobile/js/jquery-ui.1.11.1.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/jquery.slides.min.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/gnb.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/bundle.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/common.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/searchPanel.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/swiper.min.js"></script>
+
+		<script src="../../../resources/js/calenderValidateEvent.js" type="text/javascript"></script>
+		<!-- <script src="../../../resources/mobile/js/shortRentReserv_mobile_renew.js" type="text/javascript"></script> -->
+		<script src="../../../resources/mobile/js/shortRent_ui_mobile.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/short_calendar_mobile.js" type="text/javascript"></script>
+		<script src="../../../resources/mobile/js/shortMobileLogin.js" type="text/javascript"></script>
+
+
+
+		<!-- 2022 메인 리뉴얼 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/mobile/css2/mobiscroll.custom-2.6.2.min.css"><!-- 시간선택 플러그인 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/mobile/css2/main_2022.css">
+		<script type="text/javascript" src="../../../resources/mobile/js/mobiscroll.custom-2.6.2.min.js"></script><!-- 시간선택 플러그인 -->
+		<script type="text/javascript" src="../../../resources/mobile/js/ui.common.js"></script>
+</head>
+<body class="dimRenew"><!-- 팝업 노출 시 class "dimRenew" 추가 -->
+
+<!-- [팝업] 기간선택 -->
+<section class="selPeriod btmPopup selectRentPopup on"><!-- 대여기간팝업 open시 class="selPeriod" 추가 -->
+	<!-- 바닥팝업컨텐츠 -->
+	<div class="btmInnerWrap">
+		<!-- 대여기간선택팝업 닫힘 -->
+		<div class="btmPeriodWrap btmInner open"><!-- 해당팝업 선택시 class="open" 추가 / 비활성화 class="btmInert"-->
+			<!-- 헤더 -->
+			<div class="btmHead">
+				<p class="btmTit">대여기간</p>
+				<p class="sbTit">
+					21.12.14 10:00 ~ 21.12.18 16:00
+				</p>
+			</div>
+			<!--// 헤더 -->
+
+			<!-- 컨텐츠 -->
+			<div class="btmContents">
+				<!-- 달력영역 -->
+				<div class="pop-calendar2">
+					<div class="calendar-area2">
+						<div class="calendarHeader" aria-hidden="true">
+							<span class="col week-end">일</span>
+							<span class="col">월</span>
+							<span class="col">화</span>
+							<span class="col">수</span>
+							<span class="col">목</span>
+							<span class="col">금</span>
+							<span class="col week-end">토</span>
+						</div>
+					</div>
+				</div>
+				<!--// 달력영역 -->
+
+				<!-- 대여/반납선택 -->
+				<div class="calendarData">
+					<div class="periodAreaWrap">
+						<!-- 대여 -->
+						<div class="periodArea">
+							<p class="periodTit">대여</p>
+							<p class="datePeriod">21.12.14(화)</p>
+							<div class="selTimeBtn">
+								<span>10:00</span>
+								<i class="iconArrow_24"></i>
+								<a href="#none" class="goView btmOpen" open-layer-class="btmStart">
+								<!--
+									팝업 버튼 : class="btmOpen" 선언
+									팝업 버튼 : open-layer-class="btmStart" 추가
+								-->
+									<span class="blind">대여시각선택 팝업열기</span>
+								</a>
+							</div>
+						</div>
+						<!--// 대여 -->
+
+						<!-- 반납 -->
+						<div class="periodArea">
+							<p class="periodTit">반납</p>
+							<p class="datePeriod">21.12.16(화)</p>
+							<div class="selTimeBtn">
+								<span>10:00</span>
+								<i class="iconArrow_24"></i>
+								<a href="#none" class="goView btmOpen" open-layer-class="btmEnd">
+								<!--
+									팝업 버튼 : class="btmOpen" 선언
+									팝업 버튼 : open-layer-class="btmEnd" 추가
+								-->
+									<span class="blind">반납시각선택 팝업열기</span>
+								</a>
+							</div>
+						</div>
+						<!--// 반납 -->
+					</div>
+
+					<div class="notiWrap">
+						<i class="iconNoti"></i>
+						<p class="notiTxt">날짜를 선택하시면 다시 선택하실 수 있습니다.</p>
+					</div>
+				</div>
+				<!--// 대여/반납선택 -->
+			</div>
+			<!--// 컨텐츠 -->
+
+			<!-- 팝업열기영역 -->
+			<a href="#none" class="goView btmInnerOpen">
+				<span class="blind">대여기간선택열기</span>
+			</a>
+			<!--// 팝업열기영역 -->
+		</div>
+		<!--// 대여기간선택팝업 닫힘 -->
+
+		<!-- 대여지점 선택팝업 열림 -->
+		<div class="btmStoreWrap btmInner"><!-- 해당팝업 선택시 class="open" 추가 / 비활성화 class="btmInert"-->
+			<!-- 헤더 -->
+			<div class="btmHead">
+				<p class="btmTit">지점선택</p>
+				<p class="sbTit">
+					<span class="area">서울</span>
+					<span class="branch">건대지점</span>
+				</p>
+			</div>
+			<!--// 헤더 -->
+
+			<!-- 컨텐츠 -->
+			<div class="btmContents">
+				<div class="notiWrap">
+					<i class="iconNoti"></i>
+					<p class="notiTxt">대여지점과 반납지점이 다른 경우, 편도 수수료가 발생할 수 있으며, 고객센터(1599-9111)를 통해 예약 진행 바랍니다.</p>
+				</div>
+				<div class="storeWrap">
+					<div class="storeList">
+						<ul class="selectArea">
+							<li class="araeLi on">
+								<a href="#none">서울</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li class="on">
+										<a href="#none">강동지점</a>
+									</li>
+									<li class="resCmplt">
+										<a href="#none">
+											동대문지점
+											<span>예약완료</span>
+										</a>
+									</li>
+									<li>
+										<a href="#none">김포공항지점</a>
+									</li>
+									<li>
+										<a href="#none">당산지점</a>
+									</li>
+									<li>
+										<a href="#none">독산지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+									<li>
+										<a href="#none">가양지점</a>
+									</li>
+								</ul>
+							</li>
+							<li class="araeLi">
+								<a href="#none">부산</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+								</ul>
+							</li>
+							<li class="araeLi">
+								<a href="#none">대구</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+								</ul>
+							</li>
+							<li class="araeLi">
+								<a href="#none">인천</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+								</ul>
+							</li>
+							<li class="araeLi">
+								<a href="#none">광주</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+								</ul>
+							</li>
+							<li class="araeLi">
+								<a href="#none">대전</a>
+								<ul class="selectBranchWrap">
+									<li>
+										<a href="#none">구로지점</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--// 컨텐츠 -->
+
+			<!-- 팝업열기영역 -->
+			<a href="#none" class="goView btmInnerOpen">
+				<span class="blind">지점선택열기</span>
+			</a>
+			<!--// 팝업열기영역 -->
+		</div>
+		<!--// 대여지점 선택팝업 열림 -->
+
+		<!-- 차량선택팝업 닫힘 -->
+		<div class="btmCarWrap btmInner"><!-- 해당팝업 선택시 class="open" 추가 -->
+			<!-- 헤더 -->
+			<header class="btmHead">
+				<p class="btmTit">차량선택</p>
+			</header>
+			<!--// 헤더 -->
+			<!-- 컨텐츠 -->
+			<div class="btmContents">
+				<!-- 차종선택탭 -->
+				<div class="tab_menu_bg" ui-type="tab_menu">
+					<ul>
+						<li class="all"> <!-- 전체 탭 class="all" 추가 -->
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">전체</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">경차</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">소형</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">중형</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">대형</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">승합</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">SUV</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">수입차</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">전기차</span>
+							</label>
+						</li>
+						<li>
+							<label class="formChk">
+								<input type="checkbox">
+								<span class="tabBtn">캠핑카</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!--// 차종선택탭 -->
+
+				<!-- 차량선택 -->
+				<div class="carLiWrap">
+					<ul>
+						<!-- 1set -->
+						<li>
+							<label for="tgl2" class="formRdo">
+								<input type="radio" name="tgl" id="tgl2" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">캐스퍼</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<!--// 1set -->
+
+						<li>
+							<label for="tgl3" class="formRdo">
+								<input type="radio" name="tgl" id="tgl3" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl4" class="formRdo">
+								<input type="radio" name="tgl" id="tgl4" disabled><!-- 예약완료일 경우 disabled -->
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">BENZ C200 CABRIORET</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+									<span class="resCmplt">예약완료</span>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl5" class="formRdo">
+								<input type="radio" name="tgl" id="tgl5" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl6" class="formRdo">
+								<input type="radio" name="tgl" id="tgl6" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl7" class="formRdo">
+								<input type="radio" name="tgl" id="tgl7" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl8" class="formRdo">
+								<input type="radio" name="tgl" id="tgl8" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+						<li>
+							<label for="tgl9" class="formRdo">
+								<input type="radio" name="tgl" id="tgl9" checked="">
+								<div class="rentWrap">
+									<div class="rentInfo">
+										<strong class="rentName">스파크</strong>
+										<span class="rentFuel">가솔린</span>
+									</div>
+								</div>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<!--// 차량선택 -->
+			</div>
+			<!--// 컨텐츠 -->
+		</div>
+		<!--// 차량선택팝업 닫힘 -->
+	</div>
+	<!--// 바닥팝업컨텐츠 -->
+
+	<!-- 팝업 하단고정 -->
+	<footer class="btmFoot">
+		<!-- 버튼 -->
+		<div class="btnWrap btnWrap02">
+			<a class="btnDef bg_ddd bdr_ddd" href="#none">초기화</a>
+			<a class="btnDef" href="#none">다음</a>
+		</div>
+		<!--// 버튼 -->
+	</footer>
+	<!--// 팝업 하단고정 -->
+</section>
+<!--// [팝업] 기간선택 -->
+
+<!-- [팝업] 대여시각선택 -->
+<section class="selTime01 btmPopup btmStart">
+	<!-- 팝업 : class="btmStart" 추가 (버튼과 같은 값으로 맞춰야함) -->
+	<div class="btmInnerWrap">
+		<div class="btmimeWrap btmInner open">
+			<!-- 대여시각 -->
+			<div class="selectTimeList selectTime01">
+				<!-- 헤더 -->
+				<div class="btmHead ">
+					<p class="btmTit">대여시각</p>
+					<p class="btmTime">21.12.14(화) 10:00</p>
+				</div>
+				<!--// 헤더 -->
+
+				<!-- 컨텐츠 -->
+				<div class="btmContents">
+					<div class="selectTimeWrap">
+						<input type="text" class="selectTime"/><!-- 선택된 시간 노출 -->
+					</div>
+				</div>
+				<!--// 컨텐츠 -->
+
+				<a href="#none" class="goView selStartTimeOpen">
+					<span class="blind">대여시각 이동</span>
+				</a>
+			</div>
+			<!--// 대여시각 -->
+
+			<div class="selectTimeList selectTime02 off">
+				<!-- 반납시각헤더 -->
+				<div class="btmHead">
+					<p class="btmTit">반납시각</p>
+					<p class="btmTime">21.12.14(화)</p>
+				</div>
+				<!--// 반납시각헤더 -->
+
+				<!-- 컨텐츠 -->
+				<div class="btmContents">
+					<div class="selectTimeWrap">
+						<input type="text" class="selectTime"/><!-- 선택된 시간 노출 -->
+					</div>
+				</div>
+				<!--// 컨텐츠 -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업 하단고정 -->
+	<footer class="btmFoot">
+		<!-- 버튼 -->
+		<div class="btnWrap btnWrap01">
+			<a href="#none" class="btmOpen btnDef ffff" open-layer-class="selectRentPopup">다음</a>
+			<!--
+				팝업 버튼 : class="btmOpen" 선언
+				팝업 버튼 : open-layer-class="selectRentPopup" 추가
+			-->
+		</div>
+		<!--// 버튼 -->
+	</footer>
+	<!--// 팝업 하단고정 -->
+</section>
+<!--// [팝업] 대여시각선택 -->
+
+<!-- [팝업] 반납시각선택 -->
+<section class="selTime02 btmPopup btmEnd">
+	<!-- 팝업 : class="btmEnd" 추가 (버튼과 같은 값으로 맞춰야함) -->
+	<div class="btmInnerWrap">
+		<div class="btmimeWrap btmInner open">
+			<!-- 대여시각 -->
+			<div class="selectTimeList selectTime01 off">
+				<!-- 헤더 -->
+				<div class="btmHead ">
+					<p class="btmTit">대여시각</p>
+					<p class="btmTime">21.12.14(화) 10:00</p>
+				</div>
+				<!--// 헤더 -->
+
+				<!-- 컨텐츠 -->
+				<div class="btmContents">
+					<div class="selectTimeWrap">
+						<input type="text" class="selectTime"/><!-- 선택된 시간 노출 -->
+					</div>
+				</div>
+				<!--// 컨텐츠 -->
+
+				<a href="#none" class="goView selStartTimeOpen">
+					<span class="blind">대여시각 이동</span>
+				</a>
+			</div>
+			<!--// 대여시각 -->
+
+			<div class="selectTimeList selectTime02">
+				<!-- 반납시각헤더 -->
+				<div class="btmHead">
+					<p class="btmTit">반납시각</p>
+					<p class="btmTime">21.12.14(화)</p>
+				</div>
+				<!--// 반납시각헤더 -->
+
+				<!-- 컨텐츠 -->
+				<div class="btmContents">
+					<div class="selectTimeWrap">
+						<input type="text" class="selectTime"/><!-- 선택된 시간 노출 -->
+					</div>
+				</div>
+				<!--// 컨텐츠 -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업 하단고정 -->
+	<footer class="btmFoot">
+		<!-- 버튼 -->
+		<div class="btnWrap btnWrap01">
+			<a href="#none" class="btmOpen btnDef ffff" open-layer-class="selectRentPopup">다음</a>
+			<!--
+				팝업 버튼 : class="btmOpen" 선언
+				팝업 버튼 : open-layer-class="selectRentPopup" 추가
+			-->
+		</div>
+		<!--// 버튼 -->
+	</footer>
+	<!--// 팝업 하단고정 -->
+</section>
+<!--// [팝업] 반납시각선택 -->
+</body>
+</html>
